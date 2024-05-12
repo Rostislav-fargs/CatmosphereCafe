@@ -1,0 +1,515 @@
+body,
+header,
+header h2, 
+header h4{
+    margin: 0;
+    background: #9F8170;
+}
+header {
+    padding: 0;
+    color: #483C32;
+}
+.top-line-buttons,
+.decorate-brown-line-heaader,
+.header-logo,
+.right-content .phone-content,
+.your-opportunities-with-us,
+#cats-card-slider .card-of-cat{
+    display: flex;
+    align-items: center;
+}
+.top-line-content,
+.main-header-content,
+.right-content,
+.menu-bar,
+.your-opportunities-with-us .main-content,
+.our-menu-presentation .names-on-panel,
+.our-menu-presentation .menu-panel .photos-on-panel,
+.comment-randomizer,
+footer,
+#cats-card-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.mane-img-with-logo,
+.your-opportunities-with-us,
+.your-opportunities-with-us .top-content,
+.your-opportunities-with-us .content-text-circle,
+.description-cafe .decription-about-our-cafe,
+.description-cafe .decription-about-our-cafe .text-description,
+.our-menu-presentation,
+.our-menu-presentation .menu-panel,
+.talking-about-us,
+.title-tau,
+.our-cats-catalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-line-content{
+    padding: 3px 19px 0px 19px;
+}
+.top-line-buttons{
+    margin-right: 4%;
+}
+.top-line-content h4{
+    color: #EFDFBB;
+}
+a{
+    text-decoration: none;
+}
+.top-line-buttons a{
+    margin: 0 4%;
+    background: #9F8170;
+    color: #483C32;
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+.decorate-brown-line-heaader{
+    margin-left: auto;
+    height: 4px;
+    width: 65%;
+    background: #483C32;
+}
+.main-header-content{
+    align-items: flex-start;
+}
+.header-logo,
+header .right-content,
+.mane-img-with-logo h2,
+footer h2{
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.header-logo{
+    width: 360px;
+    padding-left: 10px;
+    margin: 0px; 
+}
+.header-logo a{
+    border: 0px;
+    background: #9F8170;
+    border-radius: 50%;
+    transition: all 700ms ease;
+    margin: 0px; 
+}
+.header-logo a:hover{
+    background: #8CBED6;
+    border-radius: 50%;
+    transition: all 700ms ease;
+}
+.right-content{
+    width: 404px;
+}
+.right-content a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #8CBED6;
+    border-radius: 50%;
+    border: 0px;
+}
+.right-content a img{
+    padding: 8px;
+}
+.menu-bar-bg{
+    background: #483C32;
+}
+.menu-bar {
+    height: 73px;
+    padding: 0 5% 0px 5%;
+    width: 90%;
+}
+.menu-bar a,
+.your-opportunities-with-us,
+.our-menu-presentation,
+.title-tau,
+.our-cats-catalog h2, 
+.our-cats-catalog h3, 
+.our-cats-catalog p,
+.comments-section .title-cs,
+footer h3{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.menu-bar a{
+    display: block;
+    text-align: center;
+    margin-right: 8px;
+    line-height: 43px;
+    height: 43px;
+    width: 330px;
+    border: 0px;
+    padding: 0px 0.007% 0px 0.007%;
+    color: #EFDFBB;
+    background: #483C32;
+    font-size: 1.5em;
+}
+.menu-bar .decorate-square{
+    height: 43px;
+    width: 4px;
+    background: #8CBED6;
+}
+.decorate-blue-line-h{
+    width: 100%;
+    height: 4px;
+    background: #8CBED6;
+}
+.mane-img-with-logo{
+    padding-top: 80px;
+    height: 732px;
+    width: 100%;
+    background-image: url("/Picture/bgCafeimg.png");
+    background-size: cover; /* Забезпечує розтягнення зображення на весь екран */
+    background-position: center; /* Вирівнює зображення по центру */
+}
+.mane-img-with-logo img{
+    text-align: center;
+    width: 556px; /* Задаємо ширину 200px */
+    height: auto; /* Автоматично обчислюємо висоту, щоб зберегти пропорції */
+}
+.mane-img-with-logo h2{
+    font-size: 7em;
+    color: #EFDFBB;
+    margin: 0px;
+    padding: 0px;
+}
+.your-opportunities-with-us {
+    font-size: 22px;
+}
+.your-opportunities-with-us .top-content{
+    color: #483C32;
+}
+.your-opportunities-with-us .main-content{
+    width: 1040px;
+    margin: 0px auto 0px auto;
+}
+.your-opportunities-with-us .content-text-circle{
+    text-align: center;
+    color: #EFDFBB;
+}
+.your-opportunities-with-us .content-text-circle div{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #8CBED6;
+}
+.your-opportunities-with-us .content-text-circle div img{
+    margin: 15px;
+    width: 120px;
+    height: 110px;
+}
+.decorate-blue-line{
+    width: 70%;
+    background-color: #8CBED6;
+}
+.decorate-white-line{
+    width: 80%;
+    background-color: #EFDFBB;
+    
+}
+.decorate-brown-line{
+    width: 60%;
+    background-color: #483C32;
+}
+.left-decorate-line,
+.right-decorate-line{
+    margin: 100px 0px 100px 0px;
+}
+.right-decorate-line .decorate-blue-line,
+.right-decorate-line .decorate-white-line,
+.right-decorate-line .decorate-brown-line,
+.left-decorate-line .decorate-blue-line,
+.left-decorate-line .decorate-white-line,
+.left-decorate-line .decorate-brown-line{
+    height: 6px;
+    border-radius: 3px;
+}
+.right-decorate-line .decorate-blue-line,
+.right-decorate-line .decorate-white-line,
+.right-decorate-line .decorate-brown-line{
+    margin: 20px 0px 20px auto;
+}
+.left-decorate-line .decorate-blue-line,
+.left-decorate-line .decorate-white-line,
+.left-decorate-line .decorate-brown-line{
+    margin: 20px auto 20px 0px;
+}
+.description-cafe .decription-about-our-cafe{
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.description-cafe .decription-about-our-cafe .text-description{
+    width: 1020px;
+    height: 400px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23483C32FF' stroke-width='4' stroke-dasharray='24%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    padding: 20px; /* Відступ всередині рамки */
+}
+.description-cafe .decription-about-our-cafe p,
+#tau-block1,
+#tau-block2,
+#tau-block3,
+#tau-block4,
+#cats-card-slider .card-of-cat h2{
+    font-family: "Marck Script", cursive;
+    font-weight: 400; 
+    font-style: normal;
+}
+.description-cafe .decription-about-our-cafe p{
+    text-align: center;
+    font-size: 2.5em;
+    color: #483C32;
+    margin: 0%;
+    width: 1020px;
+    height: 553px;
+}
+.description-cafe .decription-about-our-cafe img{
+    position: absolute;
+    padding-top: 150px;
+    padding-right: 1090px;
+    width: 381px;
+    height: 381px;
+}
+.our-menu-presentation h2{
+    color: #483C32;
+    font-size: 33px;
+    margin-bottom: 0.4%;
+}
+#description-our-menu{
+    width: 761px;
+    height: auto;
+    text-align: center;
+    color: #EFDFBB;
+}
+.our-menu-presentation .menu-panel{
+    width: 968px;
+    height: auto;
+    border-radius: 100px;
+    background-color: #EFDFBB;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.our-menu-presentation .names-on-panel{
+    text-align: center;
+    width: 90%;
+    height: 150px;
+}
+#dishes-on-panel, #drinks-on-panel, #desserts-on-panel{
+    margin: 0%;
+    width: 33%;
+    font-size: 36px;
+    color: #483C32;
+}
+#dishes-on-panel{
+    rotate: -10deg;
+}
+#desserts-on-panel{
+    rotate: 10deg;
+}
+.our-menu-presentation .menu-panel .photos-on-panel{
+    flex-direction: row;
+    padding: 20px;
+    width: 90%;
+    background-color: #483C32;
+}
+.our-menu-presentation .menu-panel a{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 69px;
+    width: 457px;
+    margin: 50px 20px 50px 20px;
+    border-radius: 15px;
+    font-size: 40px;
+    font-style: bold;
+    color: #EFDFBB;
+    background-color: #007066;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+}
+.talking-about-us{
+    margin: 50px 0px;
+    padding-bottom: 50px;
+    background-color: #EFDFBB;
+}
+.title-tau{
+    font-size: 2em;
+    padding: 50px 0px;
+    width: 100%;
+    color: #483C32;
+    background-color: #9F8170;
+}
+#tau-block1{
+    padding-top: 50px;
+}
+#tau-block1, #tau-block2, #tau-block3, #tau-block4{
+    font-size: 2em;
+    width: 90%;
+}
+#text2-in-tau-block2{
+    width: 50%;
+}
+#right-slide-btn,
+#left-slide-btn {
+    background-color: #9F8170;
+    border: 0px;
+    height: 120px;
+    margin: auto;
+}
+.triangle-btn-slider{
+    width: 0;
+    height: 0;
+    border-style: dashed;
+    border-width: 4px;
+    cursor: pointer;
+}
+#right-slide-btn .triangle-btn-slider,
+#left-slide-btn .triangle-btn-slider{
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+#left-slide-btn .triangle-btn-slider{
+    border-right: 120px solid #483C32;
+    border-left: 0px solid transparent;
+}
+#right-slide-btn .triangle-btn-slider{
+    border-left: 120px solid #483C32;
+    border-right: 0px solid transparent;
+}
+.our-cats-catalog{
+    width: 80%;
+    margin: 0px 10%;
+}
+#cats-card-slider .card-of-cat{
+    width: 898px;
+    height: 637px;
+    border-radius: 100px;
+    margin: 0 50px;
+    background-color: #8CBED6;
+    border: 6px solid #483C32;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+#cats-card-slider .card-of-cat img{
+    border: 12px dashed #EFDFBB;
+}
+.img-bg-brown{
+    width: 381px;
+    height: 499px;
+    border-radius: 53px;
+    background-color: #483C32;
+}
+#cats-card-slider .card-of-cat table{
+    text-align:left;
+    width: 90%;
+    margin: auto auto;
+}
+.our-cats-catalog h2, 
+.our-cats-catalog h3, 
+.our-cats-catalog p{
+    color: #483C32;
+}
+.our-cats-catalog h2{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4em;
+}
+.our-cats-catalog .title-our-cats h3{
+    width: 900px;
+    margin: 20px auto;
+    font-size: 24px;
+    color: #EFDFBB;
+}
+.our-cats-catalog h2, 
+.our-cats-catalog h3{
+    text-align: center;
+    margin: 20px 0px;
+}
+#cats-card-slider .card-of-cat h2{
+    font-size: 4em;
+    margin: 10px;
+}
+.our-cats-catalog p{
+    font-size: 1.3em;
+    margin: 20px;
+}
+#cats-card-slider .card-info-tag,
+.our-cats-catalog a{
+    font-weight: 700;
+}
+#go-to-ank-btn{
+    text-align: center;
+}
+.our-cats-catalog a{
+    display: inline-block;
+    line-height: 70px;
+    width: 270px;
+    height: 68px;
+    color: #483C32;
+    background-color: #EFDFBB;
+    border-radius: 15px; /* Радіус закруглення країв */
+    text-align: center; /* Вирівнювання тексту по центру */
+    text-decoration: none; /* Видалення підкреслення */
+    font-size: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+#cats-card-slider .card-of-cat img{
+    border-radius: 53px;
+}
+.comments-section .title-cs{
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: #483C32;
+    border-bottom: 8px dashed #483C32;
+}
+.comment-block{
+    height: 671px;
+    background-color: #EFDFBB;
+}
+.comment-randomizer{
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+.comments-section .coment-box{
+    width: 434px;
+    height: 369px;
+    border-radius: 53px;
+    color: #483C32;
+    background-color: #8CBED6;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.comment-randomizer table{
+    padding: 15px;
+}
+.comment-randomizer .user-name{
+    font-size: 2em;
+}
+.comment-randomizer .coment-box p{
+    width: 90%;
+    margin: 0px auto auto auto;
+    font-size: 24px;
+    text-indent: 1em;
+}
+#cat-in-com-block{
+    float: right; /* Розташування зображення праворуч */
+    margin-right: 23%; /* Відступ праворуч 10% */
+}
+footer{
+    width: 100%;
+    height: 159px;
+    color: #EFDFBB;
+    background-color: #483C32;
+}
+footer h2, footer h3{
+    font-weight: 400;
+    font-style: normal;
+    margin: auto 5%;
+}
