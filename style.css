@@ -165,7 +165,7 @@ footer h3{
     padding-top: 80px;
     height: 732px;
     width: 100%;
-    background-image: url("/Picture/bgCafeimg.png");
+    background-image: url("Picture/bgCafeimg.png");
     background-size: cover; /* Забезпечує розтягнення зображення на весь екран */
     background-position: center; /* Вирівнює зображення по центру */
 }
