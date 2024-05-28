@@ -1,0 +1,417 @@
+/* тіло сторінки */
+body{
+    background-color: #EFDFBB;
+    margin: 0;
+}
+
+
+/* Загальні стилі */
+/* Стилі для заголовків */
+/* Стилі для тексту */
+.block-title,
+.second-block-title,
+.third-block-title,
+.cursive-text,
+.standart-text{
+    padding: 5px;
+    margin: 0;
+    color: #483C32;
+}
+.block-title,
+.second-block-title,
+.third-block-title{
+    text-align: center;
+}
+.block-title{
+    font-size: 4em;
+}
+.second-block-title{
+    font-size: 2.25em;
+}
+.third-block-title{
+    font-size: 1.25e
+}
+.cursive-text{
+    font-size: 1.75em;
+}
+.standart-text{
+    font-size: 1em;
+}
+
+
+/* Шрифти */
+.header-logo,
+header .right-content,
+nav,
+.block-title,
+.second-block-title,
+.third-block-title,
+.cursive-text,
+.profile-btn,
+.overlay p{
+    font-weight: 400;
+    font-style: normal;
+}
+.block-title,
+.second-block-title,
+.third-block-title,
+.standart-text,
+.gbutton,
+.bbutton,
+nav a,
+nav button,
+.profile-btn,
+input,
+.overlay{
+    font-family: "Merriweather", serif;
+}
+header .second-block-title,
+.right-header-content .third-block-title,
+.welcome-block .block-title,
+footer .second-block-title{
+    font-family: "Kaushan Script", cursive;
+}
+.cursive-text,
+.card-of-cat .block-title,
+.who-are-we .block-title{
+    font-family: "Marck Script", cursive;
+}
+
+
+/* Позиціонування flexbox */
+.decorate-brown-line-heaader,
+.line-center-div,
+.line-spar-div,
+.line-spbw-div,
+.right-header-content,
+nav,
+.line-col-div,
+.book-plate{
+    display: flex;
+    align-items: center;
+}
+.line-col-div{    
+    flex-direction: column;
+}
+.line-spbw-div,
+.right-header-content{
+    justify-content: space-between;  
+}
+.line-spar-div,
+nav{
+    justify-content: space-around;
+}
+
+
+/* Заготівки до блоків, кноппок, тощо... */
+
+.block-content{
+    border-radius: 33px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.block-content,
+.text-description{
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+}
+.frame-content{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23483C32FF' stroke-width='10' stroke-dasharray='24%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.frame-content,
+.block-content{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+/* Кнопки для форм і оверлеїв */
+button{
+    border: none;
+}
+.gbutton,
+.bbutton{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+.gbutton{
+    background-color: #007066;  
+    color: #EFDFBB;
+}
+.bbutton{
+    background-color: #EFDFBB;
+    color: #483C32;
+}
+
+
+
+/* Налаштування окремих розділів сторінок */
+
+/* Стилізаця для шапки та надписів у ній */
+/* frame стилізація кольору і відступів для всіх сторінок */
+header,
+header .second-block-title,
+header .third-block-title,
+.header-logo a,
+.frame-content{
+    background-color: #9F8170;
+    margin: 0;
+    padding: 0;
+}
+/*налаштування шапки*/
+header {
+    background-color: #9F8170;
+    color: #483C32;
+    padding: 5px 10px 0 10px;
+}
+.top-header-content .third-block-title,
+footer .second-block-title,
+footer .third-block-title{
+    color: #EFDFBB;
+}
+.top-header-content .line-spar-div{
+    width: 200px;
+}
+header .line-spar-div a,
+header .line-spar-div button{
+    color: #483C32;
+    font-family: "Irish Grover", system-ui;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+a{
+    text-decoration: none;
+}
+.decorate-brown-line-heaader{
+    background: #483C32;
+    width: 65%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: -10px;
+}
+.right-header-content{
+    width: 450px;
+}
+.right-header-content a{
+    display: inline-block;
+    background: #8CBED6;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+/* Навігаційна панель */
+.right-header-content a img,
+nav{
+    padding: 8px;
+}
+nav{
+    background-color: #483C32;
+    border-top: solid 4px #8CBED6;
+}
+nav a,
+nav button{
+    display: block;
+    text-align: center;
+    line-height: 43px;
+    width: 330px;
+    border: 0px;
+    color: #EFDFBB;
+    background: #483C32;
+    font-size: 1.5em;
+    border-right: solid 4px #8CBED6;
+}
+
+
+/* book-plate блок */
+.book-plate{
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.book-plate .left-side{
+    background-color: #483C32;
+    width: 19%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top: solid 5px #483C32;
+    border-right: solid 5px #483C32;
+    border-bottom: solid 5px #483C32;
+}
+.book-plate .right-side{
+    background-color: #8CBED6;
+    color: #483C32;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: dashed 5px #483C32;
+    border-right: dashed 5px #483C32;
+    border-bottom: dashed 5px #483C32;
+    width: 81%;
+    padding: 0 20px;
+}
+.book-plate .right-side,
+.book-plate .left-side{
+    height: inherit;
+}
+.book-plate .bp-line{
+    background-color: #483C32;
+    height: 6px;
+    width: 80%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-left: -20px;
+}
+.book-plate .right-side b,
+.book-plate .right-side p,
+.book-plate .right-side button{
+    font-size: 1.25em;
+    margin: 0;
+}
+
+
+/* Підвал */
+footer{
+    background-color: #483C32;
+    padding: 20px 0;
+}
+
+
+/* Оверлеї */
+.overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(239, 223, 187,0.7);
+    z-index: 2;
+}
+/* Вміст оверлеїв */
+.overlay-content-brown,
+.overlay-content-blue{
+    flex-direction: column;
+    width: 648px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 60px auto;
+}
+.overlay-content-brown{
+    background-color: rgba(72, 60, 50, 0.95);
+    border: solid 8px rgba(140, 190, 214, 0.95);
+    min-height: 400px;
+}
+.overlay-content-blue{
+    background-color: #8CBED6;
+    color: #483C32;
+    border: dashed 8px #483C32;
+}
+.overlay-content-brown .second-block-title,
+.betext{
+    color: #EFDFBB;
+}
+.bltext{
+    color: #8CBED6;
+}
+.betext,
+.bltext,
+.orders-data-table p{
+    font-size: 1em;
+    padding: 2px;
+    margin: 5px;
+}
+
+
+/* Форми для оверлеїв */
+.overlay input,
+.overlay textarea{
+    background-color: #8CBED6;
+    color: #483C32;
+    width: 380px;
+    height: 50px;
+    border: solid 3px #332F28;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.overlay table input,
+.overlay textarea{
+    font-size: 1.3em;
+    width: 187px;
+}
+.overlay textarea{
+    height: 270px;
+    width: 187px;
+    transition: width 0.3s ease;
+    resize: none;
+}
+.overlay textarea:focus {
+    width: auto;
+}
+
+
+/* Кнопка закриття оверлея */
+/* Хрестик у верхньому правому куті */
+.close-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.close-btn::before, .close-btn::after {
+    position: absolute;
+    background-color: black;
+    top: 40px;
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    content: '';
+}
+.close-btn::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-btn::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/* Декоративні лінії R&L */
+.decorate-blue-line{
+    width: 70%;
+    background-color: #8CBED6;
+}
+.decorate-lightbrown-line{
+    width: 80%;
+    background-color: #9F8170;
+}
+.decorate-brown-line{
+    width: 60%;
+    background-color: #483C32;
+}
+.left-decorate-line,
+.right-decorate-line{
+    margin: 100px 0px 100px 0px;
+}
+.decorate-blue-line,
+.decorate-lightbrown-line,
+.decorate-brown-line{
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.right-decorate-line .decorate-blue-line,
+.right-decorate-line .decorate-lightbrown-line,
+.right-decorate-line .decorate-brown-line{
+    margin: 20px 0 20px auto;
+}
+.left-decorate-line .decorate-blue-line,
+.left-decorate-line .decorate-lightbrown-line,
+.left-decorate-line .decorate-brown-line{
+    margin: 20px auto 20px 0;
+}

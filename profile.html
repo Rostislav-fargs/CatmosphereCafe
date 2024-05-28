@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ukr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/profile.css">
+        <script src="/script/script.js"></script>
+        <title>Профіль користувача CatmosphereCafe</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Marck+Script&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Посилання на соцмережі та кнопки зміни мови -->
+            <div class="top-header-content line-spbw-div">
+                <h4 class="third-block-title">Email: catmospherecafe23@gmail.com | Адреса: Київська обл; м.Київ; вул.Нагірна 18/16; на території ЖК "Хенесі Хаус"</h4>
+                <div class="line-spar-div">
+                    <a href="" id="ukrLangBtn">Ua</a>
+                    <a href="" id="engLangBtn">En</a>
+                    <a href="" id="telegramLogoBtn"><img src="Picture/header/telegram_logo.png" alt="telegram logo"></a>
+                    <a href="" id="instagramLogoBtn"><img src="Picture/header/instagram_logo.png" alt="instagram logo"></a>
+                    <a href="" id="facebookLogoBtn"><img src="Picture/header/facebook logo.png" alt="facebook logo"></a>
+                </div>
+            </div>
+            <div class="decorate-brown-line-heaader"></div>
+            <!-- Лого, контакти, авторизація, коти, кошик -->
+            <div class="line-spbw-div">
+                <!-- Логотип з назвою -->
+                <div class="header-logo line-center-div">
+                    <a href="index.html" class="main-logo-btn"><img src="Picture/header/small_header_icon.png" alt="small header logo"></a>
+                    <a href="index.html" class="main-logo-btn"><h2 class="second-block-title">CatmosphereCafe</h2></a>
+                </div>
+                <!-- Телефони, авторизація, коти, кошик -->
+                <div class="right-header-content">
+                    <div class="line-spbw-div">
+                        <img src="Picture/header/Phone Ico.png" alt="phone icon">
+                        <div>
+                            <h4 class="third-block-title">+380(068) ***  - *** - **</h4>
+                            <h4 class="third-block-title">+380(050) ***  - *** - **</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="profile.html" id="catBtn"><img src="Picture/header/cat_vector.png" alt="cat face"></a>
+                        <a href="profile.html" id="userBtn"><img src="Picture/header/user_vector.png" alt="user"></a>
+                        <a href="profile.html" id="cartBtn"><img src="Picture/header/cart_vector.png" alt="cart"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <a href="" id="Menu">Меню кафе</a>
+            <a href="" id="our-cats">Наші котики</a>
+            <button id="table-reservation"  onclick="overlayOn('table-reservation-overlay')">Резервація столиків</button>
+            <a href="info-page.html" id="info-and-contacts">Контакти та інфо</a>
+        </nav>
+        <!-- Кнопки для переключення між сторінками профілю -->
+        <div class="profile-tabs-block">
+            <button class="profile-btn active-p" onclick="showBlock('profile-acc', this)">Профіль</button>
+            <button class="profile-btn" onclick="showBlock('client-bonuses', this)">Бонуси</button>
+            <button class="profile-btn" onclick="showBlock('last-orders', this)">Замовлення</button>
+        </div>
+        <!-- Профіль акаунту -->
+        <div class="profile-acc" id="profile-acc">
+            <!-- Інформація про клієнта -->
+            <div class="profile-info block-content line-spbw-div">
+                <div class="profile-photo">
+                    <img src="Picture/user-default-photo.jpg" alt="profile photo">
+                </div>
+                <!-- Основна інформація про клієнта -->
+                <div>
+                    <h2  class="block-title">UserCatmosphereCafe</h2>
+                    <h3 class="second-block-title">Особиста інформація</h3>
+                    <div class="personal-info line-spbw-div">
+                        <div>
+                            <i class="standart-text">ім'я:</i>
+                            <h4 class="third-block-title">Користувач</h4>
+                            <i class="standart-text">Логін</i>
+                            <h4 class="third-block-title">user_catcafe2023</h4>
+                            <i class="standart-text">стать</i>
+                            <h4 class="third-block-title">unknown</h4>
+                        </div>
+                        <div>
+                            <i class="standart-text">email:</i>
+                            <h4 class="third-block-title">usercatcafe@gmail.com</h4>
+                            <i class="standart-text">Телефон:</i>
+                            <h4 class="third-block-title">+38(068) ***-**-**</h4>
+                            <i class="standart-text">Дата народження</i>
+                            <h4 class="third-block-title">29/06/2004</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ЛДекоративні лінії -->
+            <div class="left-decorate-line">        
+                <div class="decorate-blue-line"></div>
+                <div class="decorate-lightbrown-line"></div>
+                <div class="decorate-brown-line"></div>
+            </div>
+            <!-- Додаткова інформація -->
+            <div class="extra-info-header text-description line-center-div">
+                <h2 class="block-title">Додаткова інформація</h2>
+                <img src="Picture/cat_svg13.svg" alt="blue cat">
+            </div>
+            <div class="extra-info frame-content">
+                <div class="text-description line-spbw-div">
+                    <div class="book-plate">
+                        <div class="left-side"></div>
+                        <div class="right-side standart-text">
+                            <h3 class="second-block-title">Адреса</h3>
+                            <div class="bp-line"></div>
+                            <b>Вулиця:</b>
+                            <li>Нагірна</li>
+                            <b>Будинок:</b>
+                            <li>15</li>
+                            <b>Поверх:</b>
+                            <li>4</li>
+                            <b>Квартира:</b>
+                            <li>24</li>
+                            <b>Додатково:</b>
+                            <li>Натисніть на домофоні "о", щоб охоронець відчинив двері</li>
+                        </div> 
+                    </div>
+                    <div class="book-plate table-reservation">
+                        <div class="left-side"></div>
+                        <div class="right-side standart-text">
+                            <h3 class="second-block-title">Оренда столу</h3>
+                            <div class="bp-line"></div>
+                            <div class="form-block line-col-div">
+                                <form class="line-col-div">
+                                    <input type="text" name="fName" value="UserCatmosphereCafe" placeholder="Ім’я">
+                                    <input type="tel" name="phoneNum" value="+38(068) ***-**-**" placeholder="Номер телефону">
+                                    <table>
+                                        <tr>
+                                            <th>
+                                                <input type="date" name="orederDate" placeholder="Оберіть дату" min="2024-05-18" max="2024-06-18">
+                                            </th>
+                                            <th>
+                                                <input type="time" name="orederTime" placeholder="Оберіть час" min="09:00" max="20:00">
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <input type="number" name="numberOfGuest" min="1" max="6" placeholder="Кількість гостей">
+                                            </th>
+                                            <th>
+                                                <input type="text" name="orderComment" placeholder="коментарі до замовлення">
+                                            </th>
+                                        </tr>
+                                    </table>
+                                    <button type="button" class="gbutton" onclick="overlayOn('succesfully-reserved')">Забронювати</button>
+                                </form>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Бонуси клієнта -->
+        <div class="client-bonuses  block-content" id="client-bonuses">
+            <h2 class="block-title">Бонуси</h2>
+            <div class="line-spar-div">
+                <div class="how-to-get-bonuses standart-text">
+                    <h4>Як отримати більше балів?</h4>
+                    <ul>
+                        <li>Стандартне нарахування: 10% від сплаченої суми замовлення</li>
+                        <li>Бонуси відобразяться і стануть доступні на наступний день після замовлення</li>
+                        <li>+100 балів в день народження </li>
+                    </ul>
+                </div>
+                <div class="line-col-div">
+                    <div class="client-bonuses-number">
+                        <h3 class="second-block-title num-of-bonuses">87</h3>
+                    </div>
+                    <h4 class="standart-text">Бонусів на рахнку</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Замовлення користувача -->
+        <div class="last-orders" id="last-orders">
+            <div class="last-orders-title text-description line-spbw-div">
+                <h2 class="block-title">Останні замовлення</h2>
+                <img src="Picture/cat_svg14.svg" alt="cat">
+            </div>
+            <div class="orders-history frame-content">
+                <div class="book-plate">
+                    <!-- Ліва частина блоку замовлення -->
+                    <div class="left-side line-col-div">
+                        <h3 class="second-block-title">OR004186887</h3>
+                        <div class="number-and-copy-and-status line-spar-div">
+                            <button><img src="Picture/copy_btn.png" alt="copy button"></button>
+                            <h4 class="third-block-title order-status">У процесі</h4>
+                        </div>
+                    </div>
+                    <!-- Права частина блоку замовлення -->
+                    <div class="right-side line-spbw-div">
+                        <p class="order-time">20/06/2024 17:15</p>
+                        <h3 class="second-block-title">Доставка:</h3>
+                        <p>м.Київ, вул.Нагірна, 17, 4 поверх, квартира 78</p>
+                        <div class="bp-bottom-content line-spbw-div">
+                            <b>Ціна: <span>430грн</span></b>
+                            <b>Балів: <span>43</span></b>
+                            <button onclick="overlayOn('feadback-overlay')">Залишити відгук</button>
+                            <button onclick="overlayOn('order-details-overlay')">Детальніше...</button>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="book-plate">
+                    <!-- Ліва частина блоку замовлення -->
+                    <div class="left-side line-col-div">
+                        <h3 class="second-block-title">TYKR5842269</h3>
+                        <div class="number-and-copy-and-status line-spar-div">
+                            <button><img src="Picture/copy_btn.png" alt="copy button"></button>
+                            <h4 class="third-block-title order-status">Скасовано</h4>
+                        </div>
+                    </div>
+                    <!-- Права частина блоку замовлення -->
+                    <div class="right-side line-spbw-div">
+                        <p class="order-time">18/05/2024   20:00</p>
+                        <h3 class="second-block-title">Адреса:</h3>
+                        <p>м. Київ, Нагірна 16/18, Хенесі Хаус, 1 поверх.</p>
+                        <div class="bp-bottom-content line-spbw-div">
+                            <b>Час резервування: <span>21:00</span></b>
+                            <b>Кількість людей: <span>2</span></b>
+                            <button onclick="overlayOn('feadback-overlay')">Залишити відгук</button>
+                            <button onclick="overlayOn('details-table-reservation-overlay')">Детальніше...</button>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="line-col-div more-orders">
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <!-- Оверлей Резервація столику -->
+        <div class="overlay line-center-div" id="table-reservation-overlay">
+            <div class="close-btn" onclick="overlayOff('table-reservation-overlay')"></div>
+            <form class="overlay-content-brown line-col-div line-spbw-div" id="table-reservation">
+                <h3 class="second-block-title">Заповніть дані для оренди столу</h3>
+                <input type="text" name="fName" value="UserCatmosphereCafe" placeholder="Ім’я">
+                <input type="tel" name="phoneNum" value="+38(068) ***-**-**" placeholder="Номер телефону">
+                <table>
+                    <tr>
+                        <th rowspan="4">
+                            <textarea name="orderCommentOv" placeholder="коментарі до замовлення" id="" cols="80" rows="5"></textarea>
+                        </th>
+                        <th>
+                            <input type="date" name="orederDate" placeholder="Оберіть дату" min="2024-05-18" max="2024-06-18">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="time" name="orederTime" placeholder="Оберіть час" min="09:00" max="20:00">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="number" name="numberOfGuest" min="1" max="6" placeholder="Кількість гостей">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="gbutton"  style="margin: 0 auto;" onclick="overlaySwap('table-reservation-overlay', 'succesfully-reserved')">Замовити</button>
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Оверлей Підтвердження резервування -->
+        <div class="overlay" id="succesfully-reserved" style="display: none;">
+            <div class="close-btn" onclick="overlayOff('succesfully-reserved')"></div>
+            <div class="overlay-content-blue line-col-div">
+                <h2 class="block-title">Ваш стіл успішно зарезервовано!</h2>
+                <i>тут будуть дані про реєстрацію</i>
+                <button class="bbutton" onclick="overlayOff('succesfully-reserved')">Добренько</button>
+            </div>
+        </div>
+        <!-- Оверлей Залишити відгук -->
+        <div class="overlay line-center-div" id="feadback-overlay">
+            <div class="close-btn" onclick="overlayOff('feadback-overlay')"></div>
+            <div class="overlay-content-brown line-col-div">
+                <h2 class="second-block-title">Залиште відгук</h2>
+                <form class="line-col-div">
+                    <textarea name="feadbackText" id="feadbackText" cols="100" rows="10" placeholder="Напишіть вігудк..."></textarea>
+                    <div class="btn-bottom line-spbw-div">
+                        <button type="button" class="gbutton" onclick="overlaySwap('feadback-overlay', 'feadback-overlay-succesfully')">Готово</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Оверлей Підтвердження розміщення відгуку -->
+        <div class="overlay" id="feadback-overlay-succesfully">
+            <div class="close-btn" onclick="overlayOff('feadback-overlay-succesfully')"></div>
+            <div class="overlay-content-blue line-col-div">
+                <h2 class="block-title">Ваш відгук успішно додано!</h2>
+                <i>Ви зможете побачити його серед інших відгуків на головній сторінці.
+                    Якщо в вас є якісь скарги - наберіть нас за номерами з контактної інформації.</i>
+                <button class="bbutton" onclick="overlayOff('feadback-overlay-succesfully')">Добренько</button>
+            </div>
+        </div>
+        <!-- Оверлей Детальніше про замовлення меню-->
+        <div class="overlay" id="order-details-overlay">
+            <div class="close-btn" onclick="overlayOff('order-details-overlay')"></div>
+            <div class="overlay-content-brown">
+                <h3 class="second-block-title">Детальніше про замовлення</h3>
+                <table class="orders-data-table">
+                    <tr>
+                        <th><p class="betext">Тип замовлення:</p></th>
+                        <th><p class="bltext">Доставка за адресою</p></th>
+                    </tr>
+                    <tr>
+                        <th><p class="betext">Час замовлення:</p></th>
+                        <th><p class="bltext">07/06/2024 19:32</p></th>
+                    </tr>
+                    <tr>
+                        <th><p class="betext">Стан:</p></th>
+                        <th><p style="color: #FFC700; font-size: 1em;">У процесі</p></th>
+                    </tr>
+                </table>
+                <p  class="betext">Ваше замовлення:</p>
+                <div class="ordered-positions">
+                    <div class="products-container">
+                        <div class="product-panel line-spbw-div">
+                            <div class="name-photo-product line-center-div">
+                                <img src="Picture/photoOfMenu/photocoffe.png" alt="cup of coffe">
+                                <div>
+                                    <p>Моккачіно</p>
+                                    <p>340мл</p>
+                                </div>
+                            </div>
+                            <p class="num-of-product">1</p>
+                            <p>75 грн</p>
+                        </div>
+                        <div class="product-panel line-spbw-div">
+                            <div class="name-photo-product line-center-div">
+                                <img src="Picture/photoOfMenu/photocoffe3.png" alt="cup of coffe">
+                                <div>
+                                    <p>Кетспрессо</p>
+                                    <p>30мл</p>
+                                </div>
+                            </div>
+                            <p class="num-of-product">2</p>
+                            <p>30 грн</p>
+                        </div>
+                        <div class="product-panel line-spbw-div">
+                            <div class="name-photo-product line-center-div">
+                                <img src="Picture/photoOfMenu/photocoffe3.png" alt="cup of coffe">
+                                <div>
+                                    <p>Кетспрессо</p>
+                                    <p>30мл</p>
+                                </div>
+                            </div>
+                            <p class="num-of-product">2</p>
+                            <p>30 грн</p>
+                        </div>
+                        <div class="product-panel line-spbw-div">
+                            <div class="name-photo-product line-center-div">
+                                <img src="Picture/photoOfMenu/photocoffe3.png" alt="cup of coffe">
+                                <div>
+                                    <p>Кетспрессо</p>
+                                    <p>30мл</p>
+                                </div>
+                            </div>
+                            <p class="num-of-product">2</p>
+                            <p>30 грн</p>
+                        </div>
+                        <div class="product-panel line-spbw-div">
+                            <div class="name-photo-product line-center-div">
+                                <img src="Picture/photoOfMenu/photocoffe2.png" alt="cup of coffe">
+                                <div>
+                                    <p>Допіо</p>
+                                    <p>60мл</p>
+                                </div>
+                            </div>
+                            <p class="num-of-product">1</p>
+                            <p>48 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="betext">Адреса: <span class="bltext">м. Київ, Академіка Заболотног 15, 3 секція, 4 поверх, 107 кв.</span></p>
+                <p class="betext">Усього: <span class="bltext">430</span>грн</p>
+                <p class="betext">Балів: <span class="bltext">43</span></p>
+                <button class="gbutton" style="margin: 0 auto;" onclick="overlayOff('order-details-overlay')">Добренько</button>
+            </div>
+        </div>
+        <!-- Оверлей Детальніше про замовлення стіл-->
+        <div class="overlay" id="details-table-reservation-overlay">
+            <div class="close-btn" onclick="overlayOff('details-table-reservation-overlay')"></div>
+            <div class="overlay-content-brown">
+                <h3 class="second-block-title">Детальніше про замовлення TYKR5842269:</h3>
+                <table class="orders-data-table">
+                    <tr>
+                        <th><p class="betext">Тип замовлення:</p></th>
+                        <th><p class="bltext">Оренда столу</p></th>
+                    </tr>
+                    <tr>
+                        <th><p class="betext">Час замовлення:</p></th>
+                        <th><p class="bltext">18/05/2024 20:00</p></th>
+                    </tr>
+                    <tr>
+                        <th><p class="betext">Стан:</p></th>
+                        <th><p class="bltext" style="color: #CC5443;">Скасовано</p></th>
+                    </tr>
+                </table>
+                <p class="betext" style="width: 452px;">Адреса: <span class="bltext">м. Київ, Нагірна 16/18, Хенесі Хаус, 1 поверх.</span></p>
+                <p class="betext" style="width: 452px;">Зарезервовано на: <span class="bltext">18/05/2024   21:30</span></p>
+                <p class="betext" style="width: 452px;">Кількість людей за столиком: <span class="bltext">2 людини</span></p>
+                <p class="betext" style="width: 452px;">Коментарі: <span class="bltext">Бажано столик біля біля вікна й відразу, будьласка, відразу поставте на стіл по склянці звичайної фільтрованої води.</span></p>
+                <button class="gbutton" onclick="overlayOff('details-table-reservation-overlay')" style="margin-left: 73%">Добренько</button>
+            </div>
+        </div>
+        <footer class="line-spbw-div">
+            <h3 class="second-block-title">Catmosphere Cafe</h3>
+            <h3 class="third-block-title" style="text-align: left;">З питань cпівпраці : <br><br>
+                Телефон: +38(068) *** - ** - ** <br>
+                Email: catmospherecafe23@gmail.com
+            </h3>
+        </footer>
+    </body>
+</html>

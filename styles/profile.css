@@ -1,0 +1,269 @@
+/* Переключення блоків у профілі */
+.profile-tabs-block{
+    width: 80%;
+    margin: 20px auto;
+}
+.profile-btn{
+    background-color: #EFDFBB;
+    color: #483C32;
+    height: 55px;
+    border: none;
+    border-bottom: solid 5px #483C32;
+    margin: 0 10px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 55px;
+    transition: all 700ms ease;
+}
+.profile-btn.active-p{
+    background-color: #8CBED6;
+}
+.profile-btn:hover{
+    margin: 0;
+    padding: 0 10px;
+    border-bottom: solid 5px #9F8170;
+    cursor: pointer;
+}
+.profile-btn.active-p:hover{
+    margin: 0 10px;
+    padding: 0;
+    border-bottom: solid 5px #8CBED6;
+}
+
+/* Особиста інформація */
+.profile-photo{
+    background-image: url("/Picture/bg-for-profile-photo.png");
+    background-size: cover;
+    background-position: center;
+}
+.profile-photo img{
+    width: 432px;
+    height: 470px;
+    margin: 15px;
+    border: solid 4px #8CBED6;
+    border-radius: 2%;
+}
+.profile-info h2,
+.profile-info h4,
+.profile-info i{
+    text-align: left;
+    color:#007066;
+    margin: 5px 40px;
+}
+.profile-info h4{
+    font-size: 1.75em;
+}
+
+/* Додаткова інформація і резервація столику */
+.extra-info .book-plate{
+    width: 580px;
+    height: 410px;
+}
+.extra-info .form-block{
+    margin: auto;
+}
+.book-plate form {
+    padding: 20px;
+}
+.extra-info input{
+    background-color: #EFDFBB;
+}
+input {
+    width: 380px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 0;
+    color: #483C32;
+    text-align: center;
+}
+input[name="fName"],
+input[name="phoneNum"],
+.form-block button{
+    font-size: 1.5em;
+}
+.book-plate table {
+    width: 380px;
+    margin: auto 0;   
+}
+.extra-info-header,
+.book-plate table th {
+    padding: 0;
+}
+.book-plate table input {
+    width: 187px;
+}
+.extra-info-header img{
+    margin-left: auto;
+}
+.extra-info-header .text-description{
+    margin: 0 auto;
+}
+
+/* Бонуси */
+.num-of-bonuses{
+    background-color: #483C32;
+    color: #8CBED6;
+    width: 231px;
+    height: 100px;
+    border: dashed 4px #8CBED6;
+    border-radius: 20px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+/* Історія замовлень */
+.last-orders-title img{
+    position: absolute;
+    margin: 0 10% 46px calc(90% - 338px);
+}
+.orders-history{
+    padding: 20px;
+    padding-bottom: 200px;
+    margin-bottom: 0;
+}
+.last-orders .left-side,
+.last-orders .right-side{
+    height: 200px;
+    padding: 10px;
+}
+.orders-history .left-side{
+    justify-content: center;
+}
+.number-and-copy-and-status button{
+    background-color: inherit;
+}
+.number-and-copy-and-status button:hover{
+    cursor: pointer;
+}
+.order-status{
+    background-color: #FFC700;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.orders-history .left-side .second-block-title{
+    color: #EFDFBB;
+    font-size: 2em;
+}
+.orders-history .right-side{
+    flex-direction: column;
+    align-items: start;
+}
+.orders-history .right-side .second-block-title{
+    text-align: left;
+}
+.number-and-copy-and-status,
+.bp-bottom-content{
+    width: 95%;
+}
+.orders-history .right-side b,
+.orders-history .right-side p,
+.feadback-overlay textarea{
+    color: #483C32;
+}
+.orders-history .right-side b,
+.orders-history .right-side p,
+.orders-history.right-side button,
+.feadback-overlay textarea{
+    font-size: 1.25em;
+    margin: 0;
+}
+.orders-history .right-side .order-time,
+.orders-history .right-side span,
+.orders-history .right-side button{
+    color: #007066;
+}
+.bp-bottom-content b,
+.bp-bottom-content button{
+    width: 225px;
+}
+.bp-bottom-content button{
+    background-color: #8CBED6;
+    border: none;
+    border-bottom: solid 4px #007066;
+    padding-left: 0;
+    padding-right: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+.more-orders button{
+    background-color: inherit;
+    border: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: solid 120px #483C32;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+/* За замовчуванням блок з бонусами і історією замовлень приховані */
+.client-bonuses,
+.last-orders
+{
+    display: none;
+}
+
+
+/* Оверлей Залишити відгук */
+#order-details-overlay .overlay-content-brown{
+    width: 748px;
+}
+#feadback-overlay textarea{
+    width: 80%;
+}
+
+
+/* Оверлей Деталі про замовлення меню */
+#order-details-overlay th:first-child{
+    text-align: right;
+}
+#order-details-overlay th:last-child{
+    text-align: left;
+}
+.ordered-positions{
+    background-color: #EFDFBB;
+    border: solid 4px #9F8170;
+    height: 250px;
+    overflow-y: auto;
+}
+.product-panel,
+.ordered-positions::-webkit-scrollbar,
+.ordered-positions::-webkit-scrollbar-track,
+.ordered-positions::-webkit-scrollbar-thumb {
+    border: solid 3px #EFDFBB ;
+}
+.num-of-product{
+    padding: 2px 20px;
+    background-color: #8CBED6;
+}
+.ordered-positions::-webkit-scrollbar {
+    width: 20px; /* Ширина скролбару */
+}
+.ordered-positions::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #8CBED6;
+}
+.ordered-positions::-webkit-scrollbar-thumb {
+    padding: 2px;
+    background-color: #007066;
+    border-radius: 10px
+}
+.ordered-positions::-webkit-scrollbar-thumb:hover {
+    background: #483C32;
+}
+.product-panel{
+    background-color: #9F8170;
+    padding: 4px;
+    margin: 5px;
+}
+.product-panel p{
+    font-size: 1.3em;
+    color: #332F28;
+    margin: 5px;
+}
+.product-panel .name-photo-product{
+    width: 300px;
+}

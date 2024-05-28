@@ -1,0 +1,144 @@
+.welcome-block{
+    justify-content: center;
+    height: calc(100vh - 200px);
+    background-image: url("/Picture/bgCafeimg.png"); /* додає зображення на фон */
+    background-size: cover; /* Забезпечує розтягнення зображення на весь екран */
+    background-position: center; /* Вирівнює зображення по центру */
+    padding: 1vh 0;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.welcome-block .block-title{
+    color: #EFDFBB;
+    font-size: 140px;
+}
+
+/* В нас ви зможете */
+.content-text-circle div{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #8CBED6;
+}
+.content-text-circle img{
+    margin: 15px;
+    width: 120px;
+    height: 110px;
+}
+
+/* Опис кафе */
+/* Перекриття котом тексту */
+.description-cafe{
+    background-color: #9F8170;
+    padding: 50px 0 170px 0;
+}
+.description-cafe div{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.description-cafe .cursive-text{
+    width: 850px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23483C32FF' stroke-width='4' stroke-dasharray='24%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    padding: 20px; /* Відступ всередині рамки */
+    margin: 0px auto;
+    text-align: center;
+}
+.description-cafe img{
+    position: absolute;
+    padding-top: 40px;
+}
+
+/* Панель переходу до меню */
+.our-menu-presentation .menu-panel{
+    width: 968px;
+}
+.our-menu-presentation .third-block-title{
+    width: 750px;
+    margin: 20px 0;
+}
+.menu-panel .line-spar-div{
+    width: 90%;
+    height: 100px;
+}
+.menu-panel .second-block-title:first-child{
+    rotate: -10deg;
+}
+.menu-panel .second-block-title:last-child{
+    rotate: 10deg;
+}
+.menu-panel .line-spbw-div{
+    background-color: #483C32;
+    border-radius: 50px;
+    width: 90%;
+    padding: 20px;
+}
+.menu-panel img{
+    border: solid 3px #EFDFBB;
+    border-radius: 33px;
+}
+.menu-panel .gbutton{
+    margin: 10px;
+}
+
+
+/* Картка кота */
+.card-of-cat{
+    height: 600px;
+    background-color: #8CBED6;
+    border-radius: 53px;
+    border: 6px solid #483C32;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+}
+.card-of-cat img{
+    border: 12px dashed #EFDFBB;
+}
+.img-bg-brown{
+    width: 381px;
+    height: 499px;
+    border-radius: 53px;
+    background-color: #483C32;
+}
+.card-of-cat table{
+    text-align:left;
+    width: 95%;
+    margin: auto;
+}
+.card-of-cat img{
+    border-radius: 53px;
+}
+.cat-card-button a{
+    display: block;
+}
+.cat-card-button{
+    text-align: center;
+}
+.card-of-cat .right-side button{
+    background-color: #8CBED6;
+    border-bottom: solid 4px #483C32;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+
+/* Кнопки для перегортування анкет котів і коментарів */
+#right-slide-btn,
+#left-slide-btn {
+    background-color: inherit;
+    border: 0px;
+    height: 120px;
+    margin: auto;
+}
+#right-slide-btn .triangle-btn-slider,
+#left-slide-btn .triangle-btn-slider{
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+#left-slide-btn .triangle-btn-slider{
+    border-right: 120px solid #483C32;
+    border-left: 0px solid transparent;
+}
+#right-slide-btn .triangle-btn-slider{
+    border-left: 120px solid #483C32;
+    border-right: 0px solid transparent;
+}
