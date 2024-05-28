@@ -1,7 +1,7 @@
 .welcome-block{
     justify-content: center;
     height: calc(100vh - 200px);
-    background-image: url("/Picture/bgCafeimg.png"); /* додає зображення на фон */
+    background-image: url("Picture/bgCafeimg.png"); /* додає зображення на фон */
     background-size: cover; /* Забезпечує розтягнення зображення на весь екран */
     background-position: center; /* Вирівнює зображення по центру */
     padding: 1vh 0;
