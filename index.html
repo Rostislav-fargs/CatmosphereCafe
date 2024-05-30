@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="decorate-brown-line-heaader"></div>
-        <!-- Лого, контакти, авторизація, коти, кошик -->
+        <!-- Лого, контакти, авторизація, кошик -->
         <div class="line-spbw-div">
             <!-- Логотип з назвою -->
             <div class="header-logo line-center-div">
@@ -45,7 +45,6 @@
                     </div>
                 </div>
                 <div>
-                    <a href="profile.html" id="catBtn"><img src="Picture/header/cat_vector.png" alt="cat face"></a>
                     <a href="profile.html" id="userBtn"><img src="Picture/header/user_vector.png" alt="user"></a>
                     <a href="profile.html" id="cartBtn"><img src="Picture/header/cart_vector.png" alt="cart"></a>
                 </div>
@@ -53,8 +52,8 @@
         </div>
     </header>
     <nav>
-        <a href="" id="Menu">Меню кафе</a>
-        <a href="" id="our-cats">Наші котики</a>
+        <a href="cafe-menu.html" id="Menu">Меню кафе</a>
+        <a href="cats.html" id="our-cats">Наші котики</a>
         <button id="table-reservation"  onclick="overlayOn('table-reservation-overlay')">Резервація столиків</button>
         <a href="info-page.html" id="info-and-contacts">Контакти та інфо</a>
     </nav>
@@ -71,10 +70,13 @@
     </div>
     <!-- В нас ви зможете -->
     <div class="your-opportunities-with-us line-col-div block-content">
+        <!-- Заголовок -->
         <div class="top-content">
             <h2 class="block-title">В нас ви зможете</h2>
         </div>
+        <!-- Основний контент блоку -->
         <div class="line-spbw-div">  
+            <!-- Блоки назва-зображення -->
             <div class="content-text-circle line-col-div">
                 <h3 class="second-block-title">Випити кави</h3>
                 <div><img src="Picture/IcoCoffe 1.png" alt="Coffe cap"></div>
@@ -102,7 +104,9 @@
     <!-- Опис нашого кафе -->
     <div class="description-cafe frame-content">
         <div>
+            <!-- Фото із абсолютною позицією -->
             <img src="Picture/cat_svg_1.svg" alt="cat">
+            <!-- Короткий опис кафе -->
             <p class="cursive-text">
                 "Наша кав'ярня затишно розташована в центрі міста, - це унікальний простір для любителів кави та котів. 
                 <br>
@@ -133,7 +137,7 @@
                 <img src="Picture/menu-photo-drink.png" alt="coffe">
                 <img src="Picture/menu-photo-desert.png" alt="desert">
             </div>
-            <a class="gbutton" href="menu.html">Відкрити меню</a>
+            <a class="gbutton" href="cafe-menu.html">Відкрити меню</a>
         </div>
     </div>
     <!-- ЛДекоративні лінії -->
@@ -226,19 +230,19 @@
                 <div class="card-of-cat line-center-div">
                     <table>
                         <tr>
-                            <th rowspan="3"><div class="img-bg-brown"><img src="Picture/layla-photo1.png" alt="Layla cat"></div></th>
-                            <th><h2 class="block-title">Лайла</h2></th>
+                            <th rowspan="3"><div class="img-bg-brown"><img id="cat-photo" src="" alt="Cat photo"></div></th>
+                            <th><h2 class="block-title" id="cat-name"></h2></th>
                         </tr>
                         <tr>
                             <th>
-                                <p class="standart-text">Стать: жіноча, кастрована</p>
-                                <p class="standart-text">Вік: 3 місяці</p>
-                                <p class="standart-text">Характер: ігрива, велелюбна, активна</p>
-                                <p class="standart-text">Кішка повністю здорова та дуже активна. Обожнює знаходитися біля людей та взаємодіяти з ними...</p>
+                                <p class="standart-text" id="cat-sex">Стать: </p>
+                                <p class="standart-text" id="cat-age">Вік: </p>
+                                <p class="standart-text" id="cat-character">Характер: </p>
+                                <p class="standart-text" id="cat-description">Опис: </p>
                             </th>
                         </tr>
                         <tr>
-                            <th class="cat-card-button"><button class="bbutton">Перейти до анкети</button></th>
+                            <th class="line-col-div"><button class="bbutton cat-card-button"><a href="cats.html">Перейти до анкети</a></button></th>
                         </tr>
                     </table>
                 </div>

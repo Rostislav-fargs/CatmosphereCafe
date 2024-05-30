@@ -1,0 +1,224 @@
+/* Фото з заголовком на перед меню */
+.menu-welcom-title{
+    background-image: url(../Picture/menu_welcome.png);
+    background-size: cover; 
+    background-position: center;
+    height: 271px;
+    justify-content: center;
+}
+.menu-welcom-title .block-title{
+    color: #EFDFBB;
+    font-size: 96px;
+}
+
+/* Меню кафе */
+/* основні налаштування */
+.menu-block {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.sidebar,
+.opening-hours,
+.popular-button{
+    font-size: 20px;
+}
+.sidebar {
+    background-color: #483C32;
+    text-align: center;
+    padding: 10px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%238CBED6FF' stroke-width='10' stroke-dasharray='24%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.opening-hours {
+    background-color: #8CBED6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.popular-button{
+    color: #8CBED6;
+}
+.popular-button:hover{
+    color: #483C32;
+    background-color: #8CBED6;
+    border-color: #483C32;
+}
+.opening-hours p {
+    margin: 5px 0;
+}
+.opening-hours img {
+    width: 40px;
+    height: 40px;
+}
+.popular-button {
+    background-color: #483C32;
+    border: solid 4px #8CBED6;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+/* Заголовок блоку з меню */
+.head-menu-content,
+.filter-menu {
+    background-color: #9F8170;
+    padding: 20px 10%;
+}
+.head-menu-content img{
+    position: absolute;
+    height: 250px;
+    padding-right: 30%;
+    padding-bottom: 10px;
+}
+/* Фільтр меню */
+.filter-menu button{
+    background-color: inherit;
+    border: none;
+    transition: all 500ms;
+}
+.filter-menu button:hover{
+    background-color: #8CBED6;
+    font-weight: 800;
+}
+.filter-menu button:active{
+    background-color: #18B6AC;
+    color: #EFDFBB;
+    font-weight: 800;
+}
+.filter-menu .standart-text{
+    width: 55%;
+    text-align: center;
+    border-bottom: solid 4px #8CBED6;
+}
+.filter-menu .line-col-div{
+    margin-top: 20px;
+}
+/* Меню у кафе */
+.cafe-menu{
+    padding: 20px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23483C32FF' stroke-width='10' stroke-dasharray='24%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.top-menu-btns{
+    width: 90%;
+}
+.top-menu-btns *{
+    font-size: 18px;
+    color: #18B6AC;
+    z-index: 800;
+}
+.top-menu-btns button{
+    background-color: #483C32;
+    border: solid 3px #18B6AC;
+    border-radius: 7px;
+}
+.top-menu-btns button:hover{
+    background-color: #18B6AC;
+    color: #FFC700;
+    border-color: #FFC700;
+    cursor: pointer;
+
+}
+.sort-by-price{
+    width: 120px;
+    cursor: pointer;
+}
+.sort-by-price button:last-child{
+    transform: rotate(180deg);
+}
+/* Назва поточної категорії */
+.cafe-menu .second-block-title{
+    width: 400px;
+    padding: 10px;
+    border: solid 4px #18B6AC;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+.second-block-title div{
+    background-color: #9F8170;
+    border-radius: 20px;
+    border: solid #483C32 4px;
+}
+/* Страви і напої у меню */
+.cafe-menu-positions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 75%;
+    margin: 0 auto;
+}
+.product-card {
+    width: 240px;
+    background-color: #9F8170;
+    border-radius: 10px;
+    border: solid 4px #483C32;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    color: #483C32;
+    transition: border-shadow 200ms easy;
+}
+.product-card:hover{
+    box-shadow: 15px 15px 15px #483C3280;
+    padding: 0;
+}
+/* Фото страви/напою */
+.product-image {
+    width: 100%;
+    height: 166px;
+}
+/* Інфо позиції */
+.product-info{
+    height: calc(96% - 166px);
+    padding: 6px;
+}
+/* Назва позиції */
+.cafe-menu-positions .third-block-title {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+/* Ціна позиції */
+.product-price {
+    font-size: 20px;
+    color: #483C32;
+}
+/* кнопка додавання до кошику */
+.cart-icon {
+    background-color: #483C32;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: solid 4px #8CBED6;
+}
+.cart-icon:hover{
+    background-color: #9F8170;
+}
+.cart-icon:active{
+    background-color: #18B6AC;
+}
+.pagination{
+    margin: 50px 0;
+}
+.pagination button:hover{
+    color: #8CBED6;
+}
+.pagination button:active{
+    color: #18B6AC;
+    border-bottom: solid #18B6AC 4px;
+}
+.pagination *{
+    background-color: inherit;
+    color: #483C32;
+    font-size: 30px;
+    border: none;
+}
+.active{
+    color: #8CBED6;
+    border-radius: 10px;
+    border-bottom: solid 6px #8CBED6;
+    background-color: #483C32;
+    padding: 0 5px;
+}
+.active:hover{
+    background-color: inherit;
+}
+.active:active{
+    background-color: #18B6AC;
+}

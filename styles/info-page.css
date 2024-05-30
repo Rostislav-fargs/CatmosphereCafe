@@ -25,39 +25,56 @@
     list-style: none;
     padding: 10px 0;
 }
+/* Блок вакансії */
 .vacancy{
     margin: 10px 0;
 }
+/* Список вакансій */
 .list-of-vacancies .third-block-title{
     text-align: left;
 }
-.name-vacancy .block-title{
+/* Загаловкова табличка вакансій */
+.name-vacancy .second-block-title{
     color: #8CBED6;
+    transition: font-size 600ms;
 }
+.name-vacancy:hover{
+    font-size: 1.2em;
+    transition: font-size 200ms;
+}
+/* Загаловкова табличка вакансій */
+
 .name-vacancy{
     background-color: #483C32;
-    width: 100%;
+    width: 95%;
     border-radius: 20px;
     border: dashed #8CBED6 4px;
+    padding: 0 30px;
+}
+/* Загаловкова табличка вакансій */
+
+.name-vacancy img{
+    transition: 400ms;
 }
 .name-vacancy img,
 .vacancy .block-title{
     margin: 7px 30px;
 }
+/* Бликитиний блок, інформація вакансії */
 .content-vacancy{
+    display: none;
     background-color: #8CBED6;
     width: 93%;
-    margin-top: -30px;
-    z-index: -1;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 40px 30px 30px 30px;
+    padding: 20px;
 }
 .decorate-dashed-brown-line{
     width: 100%;
     border: dashed #483C32 4px;
     margin: 10px auto;
 }
+/* Кнопка надсилання анкети */
 .vacancy .gbutton{
     margin: 0 auto;
 }

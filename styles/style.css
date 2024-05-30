@@ -62,18 +62,21 @@ nav a,
 nav button,
 .profile-btn,
 input,
-.overlay{
+.overlay,
+.menu-block * {
     font-family: "Merriweather", serif;
 }
 header .second-block-title,
 .right-header-content .third-block-title,
 .welcome-block .block-title,
-footer .second-block-title{
+footer .second-block-title,
+.menu-welcom-title .block-title{
     font-family: "Kaushan Script", cursive;
 }
 .cursive-text,
 .card-of-cat .block-title,
-.who-are-we .block-title{
+.who-are-we .block-title,
+.menu-block .block-title{
     font-family: "Marck Script", cursive;
 }
 
@@ -86,7 +89,8 @@ footer .second-block-title{
 .right-header-content,
 nav,
 .line-col-div,
-.book-plate{
+.book-plate,
+.overlay{
     display: flex;
     align-items: center;
 }
@@ -104,7 +108,6 @@ nav{
 
 
 /* Заготівки до блоків, кноппок, тощо... */
-
 .block-content{
     border-radius: 33px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -140,10 +143,29 @@ button{
 .gbutton{
     background-color: #007066;  
     color: #EFDFBB;
+    box-shadow: 15px 15px 15px #483C3240;
 }
 .bbutton{
     background-color: #EFDFBB;
     color: #483C32;
+}
+th .bbutton a{
+    color: inherit;
+    background-color: inherit;
+} 
+.gbutton:hover{
+    background-color: #483C32;
+    color: #EFDFBB;
+}
+.gbutton:active,
+.bbutton:active{
+    background-color: #9F8170;
+    color: #EFDFBB;
+}
+.bbutton:hover,
+th .bbutton a:hover{
+    background-color: #483C32;
+    color: #8CBED6;
 }
 
 
@@ -172,9 +194,11 @@ footer .second-block-title,
 footer .third-block-title{
     color: #EFDFBB;
 }
+/* Адреса і соц мережі */
 .top-header-content .line-spar-div{
     width: 200px;
 }
+/* Кнопки переключення мов і Назва біля лого сайту */
 header .line-spar-div a,
 header .line-spar-div button{
     color: #483C32;
@@ -183,9 +207,14 @@ header .line-spar-div button{
     font-weight: 800;
     font-size: 1.3em;
 }
+header .line-spar-div a:hover,
+.header-logo .second-block-title:hover{
+    color: #EFDFBB;
+}
 a{
     text-decoration: none;
 }
+/* Розділяюча коричнева лінія в шапці */
 .decorate-brown-line-heaader{
     background: #483C32;
     width: 65%;
@@ -193,8 +222,9 @@ a{
     margin-left: auto;
     margin-right: -10px;
 }
+/* Телефони, профіль користувача, кошик */
 .right-header-content{
-    width: 450px;
+    width: 400px;
 }
 .right-header-content a{
     display: inline-block;
@@ -203,14 +233,25 @@ a{
     width: 50px;
     border-radius: 50%;
 }
+.right-header-content a:hover{
+    background-color: #EFDFBB;
+}
+.right-header-content a:active{
+    background-color: #007066;
+}
 /* Навігаційна панель */
 .right-header-content a img,
 nav{
     padding: 8px;
 }
 nav{
+    position: -webkit-sticky; /* для сумісності з Safari */
+    position: sticky;
+    top: 0;
     background-color: #483C32;
     border-top: solid 4px #8CBED6;
+    border-bottom: solid 4px #8CBED6;
+    z-index: 999;
 }
 nav a,
 nav button{
@@ -224,6 +265,57 @@ nav button{
     font-size: 1.5em;
     border-right: solid 4px #8CBED6;
 }
+nav a:hover,
+nav button:hover,
+nav a:active,
+nav button:active{
+    border-radius: 5px;
+    font-weight: 900;
+}
+nav a:hover,
+nav button:hover{
+    background-color: #8CBED6;
+    color: #483C32; 
+}
+nav a:active,
+nav button:active{
+    background-color: #EFDFBB;
+    color: #483C32;
+}
+
+/* Кнопки для перегортування анкет котів і коментарів */
+#right-slide-btn,
+#left-slide-btn {
+    background-color: inherit;
+    border: 0px;
+    height: 120px;
+    margin: auto;
+}
+#right-slide-btn .triangle-btn-slider,
+#left-slide-btn .triangle-btn-slider{
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+#left-slide-btn .triangle-btn-slider{
+    border-right: 120px solid #483C32;
+    border-left: 0px solid transparent;
+}
+#right-slide-btn .triangle-btn-slider{
+    border-left: 120px solid #483C32;
+    border-right: 0px solid transparent;
+}
+#right-slide-btn .triangle-btn-slider:hover{
+    border-left: 120px solid #8CBED6;
+}
+#left-slide-btn .triangle-btn-slider:hover{
+    border-right: 120px solid #8CBED6;
+}
+#right-slide-btn .triangle-btn-slider:active{
+    border-left: 120px solid #EFDFBB;
+}
+#left-slide-btn .triangle-btn-slider:active{
+    border-right: 120px solid #EFDFBB;
+}
 
 
 /* book-plate блок */
@@ -232,6 +324,7 @@ nav button{
     border-radius: 30px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
+/* Ліва частина(коричнева) */
 .book-plate .left-side{
     background-color: #483C32;
     width: 19%;
@@ -241,6 +334,7 @@ nav button{
     border-right: solid 5px #483C32;
     border-bottom: solid 5px #483C32;
 }
+/* Права частина(блакитна) */
 .book-plate .right-side{
     background-color: #8CBED6;
     color: #483C32;
@@ -264,6 +358,7 @@ nav button{
     border-bottom-right-radius: 3px;
     margin-left: -20px;
 }
+/* Стилізація тексту у book-plate */
 .book-plate .right-side b,
 .book-plate .right-side p,
 .book-plate .right-side button{
@@ -283,6 +378,8 @@ footer{
 .overlay{
     position: fixed;
     display: none;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100%;
     top: 0;
@@ -290,34 +387,37 @@ footer{
     right: 0;
     bottom: 0;
     background-color: rgba(239, 223, 187,0.7);
-    z-index: 2;
+    z-index: 1000;
 }
 /* Вміст оверлеїв */
 .overlay-content-brown,
 .overlay-content-blue{
-    flex-direction: column;
     width: 648px;
     border-radius: 30px;
     padding: 20px;
-    margin: 60px auto;
 }
+/* Коричневий оверлей */
 .overlay-content-brown{
     background-color: rgba(72, 60, 50, 0.95);
     border: solid 8px rgba(140, 190, 214, 0.95);
-    min-height: 400px;
 }
+/* Блакитний оверлей */
 .overlay-content-blue{
     background-color: #8CBED6;
     color: #483C32;
     border: dashed 8px #483C32;
 }
+/* Бежевий текст */
 .overlay-content-brown .second-block-title,
+.overlay-content-brown .block-title,
 .betext{
     color: #EFDFBB;
 }
+/* Блакитний текст */
 .bltext{
     color: #8CBED6;
 }
+/* Стилізація тексту оверлеїв */
 .betext,
 .bltext,
 .orders-data-table p{
@@ -344,12 +444,14 @@ footer{
     font-size: 1.3em;
     width: 187px;
 }
+/* Текстове поле для оверлеїв */
 .overlay textarea{
     height: 270px;
     width: 187px;
     transition: width 0.3s ease;
     resize: none;
 }
+/* Текстове поле під час редагування */
 .overlay textarea:focus {
     width: auto;
 }
@@ -367,7 +469,7 @@ footer{
 .close-btn::before, .close-btn::after {
     position: absolute;
     background-color: black;
-    top: 40px;
+    top: -20px;
     width: 40px;
     height: 6px;
     border-radius: 3px;
@@ -402,16 +504,21 @@ footer{
 .decorate-lightbrown-line,
 .decorate-brown-line{
     height: 8px;
-    border-radius: 4px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
+/* Розміщення декоративних ліній праворуч */
 .right-decorate-line .decorate-blue-line,
 .right-decorate-line .decorate-lightbrown-line,
 .right-decorate-line .decorate-brown-line{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     margin: 20px 0 20px auto;
 }
+/* Розміщення декоративних ліній ліворуч */
 .left-decorate-line .decorate-blue-line,
 .left-decorate-line .decorate-lightbrown-line,
 .left-decorate-line .decorate-brown-line{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
     margin: 20px auto 20px 0;
 }

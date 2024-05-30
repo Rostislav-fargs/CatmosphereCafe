@@ -3,6 +3,7 @@
     width: 80%;
     margin: 20px auto;
 }
+/* Кнопки для переключення блоків */
 .profile-btn{
     background-color: #EFDFBB;
     color: #483C32;
@@ -15,9 +16,11 @@
     line-height: 55px;
     transition: all 700ms ease;
 }
+/* Стан для кнопки активного блоку */
 .profile-btn.active-p{
     background-color: #8CBED6;
 }
+/* Анмація кнопок переключення */
 .profile-btn:hover{
     margin: 0;
     padding: 0 10px;
@@ -31,11 +34,13 @@
 }
 
 /* Особиста інформація */
+/* задній фон для фото користувача */
 .profile-photo{
     background-image: url("/Picture/bg-for-profile-photo.png");
     background-size: cover;
     background-position: center;
 }
+/* Фото користувача */
 .profile-photo img{
     width: 432px;
     height: 470px;
@@ -43,6 +48,7 @@
     border: solid 4px #8CBED6;
     border-radius: 2%;
 }
+/* Стилізація панелі із особистими даними */
 .profile-info h2,
 .profile-info h4,
 .profile-info i{
@@ -54,6 +60,8 @@
     font-size: 1.75em;
 }
 
+
+/* Додатковий блок */
 /* Додаткова інформація і резервація столику */
 .extra-info .book-plate{
     width: 580px;
@@ -68,6 +76,7 @@
 .extra-info input{
     background-color: #EFDFBB;
 }
+/* Стилізація форми для замовлення столику в профілі користувача */
 input {
     width: 380px;
     height: 50px;
@@ -128,6 +137,7 @@ input[name="phoneNum"],
     height: 200px;
     padding: 10px;
 }
+/* Номер, кнопка копіювання */
 .orders-history .left-side{
     justify-content: center;
 }
@@ -137,6 +147,7 @@ input[name="phoneNum"],
 .number-and-copy-and-status button:hover{
     cursor: pointer;
 }
+/* Колір стану замовлення */
 .order-status{
     background-color: #FFC700;
     padding: 5px;
@@ -147,6 +158,7 @@ input[name="phoneNum"],
     color: #EFDFBB;
     font-size: 2em;
 }
+/* Загальні дані про замовлення */
 .orders-history .right-side{
     flex-direction: column;
     align-items: start;
@@ -187,6 +199,10 @@ input[name="phoneNum"],
     padding-right: 10px;
     text-align: left;
     cursor: pointer;
+}
+.bp-bottom-content button:hover{
+    color: #FFC700;
+    border-color: #FFC700;
 }
 .more-orders button{
     background-color: inherit;

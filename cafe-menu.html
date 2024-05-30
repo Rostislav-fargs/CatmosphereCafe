@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/cats.css">
+    <link rel="stylesheet" href="styles/cafe-menu.css">
     <script src="/script/script.js"></script>
     <title>Меню кафе CatmosphereCafe</title>
 
@@ -56,89 +56,83 @@
         <button id="table-reservation"  onclick="overlayOn('table-reservation-overlay')">Резервація столиків</button>
         <a href="info-page.html" id="info-and-contacts">Контакти та інфо</a>
     </nav>
-    <div>
-        <img src="Picture/cat_svg15.svg" alt="cat" style="position: absolute;">
+    <!-- Прев'ю перед меню -->
+    <div class="menu-welcom-title line-col-div">
+        <h2 class="block-title">Catmosphere Cafe</h2>
     </div>
-    <!-- ЛДекоративні лінії -->
-    <div class="left-decorate-line" style="margin-top: 110px;">        
-        <div class="decorate-blue-line"></div>
-        <div class="decorate-lightbrown-line"></div>
-        <div class="decorate-brown-line"></div>
-    </div>
-    <!-- Активний каталог котів -->
-    <div class="block-content" id="cat-slider">
-        <div>
-            <h2 class="block-title">Наші котики</h2>
-            <div id="cats-card-slider" class="line-center-div">
-                <button id="left-slide-btn"><div class="triangle-btn-slider"></div></button>
-                <div class="card-of-cat line-col-div">
-                    <table>
-                        <tr>
-                            <th rowspan="3"><div class="img-bg-brown"><img id="cat-photo" src="" alt="Cat photo"></div></th>
-                            <th><h2 class="block-title" id="cat-name">Ім'я</h2></th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p class="standart-text" id="cat-sex">Стать: </p>
-                                <p class="standart-text" id="cat-age">Вік: </p>
-                                <p class="standart-text" id="cat-character">Характер: </p>
-                                <p class="standart-text" id="cat-description">Опис: </p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="line-col-div"><button class="bbutton cat-card-button" onclick="overlayOn('questionnaire-cat-shelter-overlay')">Прихистити</button></th>
-                        </tr>
-                    </table>
-                    <p class="standart-text" id="cat-story"></p>
+    <div class="menu-block">
+        <!-- Години роботи і популярні страви -->
+        <div class="sidebar line-col-div">
+            <div class="opening-hours line-col-div">
+                <p class="standart-text">Заклад відкривається</p>
+                <div class="line-center-div">
+                    <p class="standart-text">З 9:00 до 23:00</p>
+                    <img src="/Picture/free-icon-coffee-beans-3219300 1.png" alt="coffee beans">
                 </div>
-                <button id="right-slide-btn"><div class="triangle-btn-slider"></div></button>
+            </div>
+            <button class="popular-button line-center-div">Популярне &#9733;</button>
+        </div>
+        <!-- Заголовок блоку з меню -->
+        <div class="head-menu-content">
+            <h2 class="block-title">Замовлення Напоїв та Страв</h2>
+            <div class="line-spar-div">
+                <img src="/Picture/cat_svg16.svg" alt="Cat Logo">
+                <div style="text-align: right; margin-left: auto;">
+                    <p class="standart-text">Мінімальна сума замовлення - 150 грн</p>
+                    <p class="standart-text">Доставка по Києву - 49 грн</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- ПДекоративні лінії -->
-    <div class="right-decorate-line">        
-        <div class="decorate-blue-line"></div>
-        <div class="decorate-lightbrown-line"></div>
-        <div class="decorate-brown-line"></div>
-    </div>
-    <!-- Інші анкети котів -->
-    <div>
-        <!-- Заголовок -->
-        <div class="text-description">
-            <h3 class="second-block-title">Переглянути інші анкети</h3>
-        </div>
-        <!-- Кнопки для переходу на анкети котів -->
-        <div class="frame-content">
-            <div class="galery">
-                <button class="cat" data-cat="layla">
-                    <img src="Picture/ourCats/layla.png" alt="Лайла">
-                    <p class="cursive-text">Лайла</p>
-                </button>
-                <button class="cat" data-cat="sher">
-                    <img src="picture/ourcats/sher.png" alt="Шер">
-                    <p class="cursive-text">Шер</p>
-                </button>
-                <button class="cat" data-cat="timon">
-                    <img src="picture/ourcats/timon.png" alt="Тімон">
-                    <p class="cursive-text">Рюріх</p>
-                </button>
-                <button class="cat" data-cat="ryurih">
-                    <img src="picture/ourcats/ryurih.png" alt="Рюріх">
-                    <p class="cursive-text">Тімон</p>
-                </button>
-                <button class="cat" data-cat="marusya">
-                    <img src="picture/ourcats/marusya.png" alt="Маруся">
-                    <p class="cursive-text">Маруся</p>
-                </button>
-                <button class="cat" data-cat="sever">
-                    <img src="picture/ourcats/sever.png" alt="Север">
-                    <p class="cursive-text">Север</p>
-                </button>
-                <button class="cat" data-cat="kusya">
-                    <img src="picture/ourcats/kusya.png" alt="Куся">
-                    <p class="cursive-text">Куся</p>
-                </button>
+        <!-- Фільтр категорій страв -->
+        <div class="filter-menu">
+            <div class="line-col-div">
+                <button id="all_drinks"><h2 class="block-title">Бар</h2></button>
+                <button id="coffee_drinks" class="standart-text">КАВА</button>
+                <button id="tea_and_chocolate_drinks" class="standart-text">ЧАЙ/ШОКОЛАД</button>
+                <button id="cocktails_drinks" class="standart-text">КОКТЕЙЛІ</button>
+                <button id="juice_and_water_drinks" class="standart-text">СОК/ВОДА</button>
+                <button id="special_drinks" class="standart-text">ОСОБЛИВІ НАПОЇ</button>
             </div>
+            <div class="line-col-div">
+                <button><h2 class="block-title">СТРАВИ</h2></button>
+                <button class="standart-text">СНІДАНОК</button>
+                <button class="standart-text">ПЕРШІ СТРАВИ</button>
+                <button class="standart-text">ДРУГІ СТРАВИ</button>
+                <button class="standart-text">САЛАТИ</button>
+                <button class="standart-text">ЗАКУСКИ</button>
+                <button class="standart-text">ФРИТЮР</button>
+                <button class="standart-text">ДЕСЕРТИ</button>
+            </div>
+        </div>
+        <!-- Меню у кафе -->
+        <div class="cafe-menu line-col-div">
+            <div class="top-menu-btns line-spar-div">
+                <div class="tags-btns">
+                    <button>Гостре</button>
+                    <button>Без м'яса</button>
+                    <button>Веганське</button>
+                    <button>Гіпоалергенне</button>
+                    <button>Без цукру</button>
+                    <button>Без лактози</button>
+                    <button>Без глютену</button>
+                </div>
+                <div class="sort-by-price line-spbw-div">
+                    Ціна:
+                    <button id="sort_asc">
+                        <img src="/Picture/sortByPrice.png" alt="Зростання ціни">
+                    </button>
+                    <button id="sort_desc">
+                        <img src="/Picture/sortByPrice.png" alt="Спадання ціни">
+                    </button>
+                </div>
+            </div>
+            <div class="category-name line-center-div">
+                <h3 class="second-block-title"><div id="current_category">Кава</div></h3>
+            </div>
+            <div class="cafe-menu-positions" id="cafe-menu">
+            
+            </div>
+            <div id="pagination" class="pagination"> </div>
         </div>
     </div>
     <!-- Оверлей Резервація столику -->
@@ -176,7 +170,7 @@
         </form>
     </div>
     <!-- Оверлей підтвердження резервування -->
-    <div class="overlay qsh-overlay" id="succesfully-reserved">
+    <div class="overlay" id="succesfully-reserved" style="display: none;">
         <div class="close-btn" onclick="overlayOff('table-reservation-overlay')"></div>
         <div class="overlay-content-blue line-col-div">
             <h2 class="block-title">Ваш стіл успішно зарезервовано!</h2>
@@ -184,34 +178,6 @@
             <button class="bbutton" onclick="overlayOff('succesfully-reserved')">Добренько</button>
         </div>
     </div>
-    <!-- Анкета для прихистку кота -->
-    <div class="overlay qsh-overlay" id="questionnaire-cat-shelter-overlay">
-        <div class="close-btn" onclick="overlayOff('questionnaire-cat-shelter-overlay')"></div>
-        <div class="overlay-content-brown line-col-div">
-            <h2 class="block-title">Заповніть дані для прихистку котика</h2>
-            <form>
-                <input type="text" id="name" name="name" placeholder="Ім'я, Прізвище">
-                <input type="tel" id="phone" name="phone" placeholder="Номер телефону">             
-                <div class="date-time">
-                    <input type="date" id="date" name="date" >
-                    <input type="time" id="time" name="time" >
-                </div>
-                <textarea id="about" name="about" rows="4" cols="77" laceholder="Напишіть трохи про себе"></textarea>
-            </form>
-            <button class="gbutton" onclick="overlaySwap('questionnaire-cat-shelter-overlay', 'qsh-overlay-succesfully')">Надіслати</button>
-        </div>
-    </div>
-    <!-- Підтвердження відправки анкети -->
-    <div class="overlay" id="qsh-overlay-succesfully">
-        <div class="close-btn" onclick="overlayOff('qsh-overlay-succesfully')"></div>
-        <div class="overlay-content-blue line-col-div">
-            <h2 class="block-title">Ваші дані успішно відправлено</h2>
-            <p class="standart-text">Чекайте сповіщення у особистому кабінеті або за вашим номером телефону.</p>
-            <button class="bbutton" onclick="overlayOff('qsh-overlay-succesfully')">Добренько</button>
-        </div>
-    </div>
-
-    
     <footer class="line-spbw-div">
         <h3 class="second-block-title">Catmosphere Cafe</h3>
         <h3 class="third-block-title" style="text-align: left;">З питань cпівпраці : <br><br>
