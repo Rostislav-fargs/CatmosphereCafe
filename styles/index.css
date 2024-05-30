@@ -2,9 +2,9 @@
 .welcome-block{
     justify-content: center;
     height: calc(100vh - 200px);
-    background-image: url("/Picture/bgCafeimg.png");
-    background-size: cover; 
-    background-position: center;
+    background-image: url("../Picture/bgCafeimg.png");
+    background-size: cover;
+    background-position: center; 
     padding: 1vh 0;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.7);
 }
