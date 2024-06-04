@@ -5,63 +5,63 @@
             "volume_ml": "90мл",
             "energy_value": "9 ккал/ б-0.6/в-0.7/ж-0.6",
             "price": "45грн",
-            "photo": "../Picture/photoOfMenu/americano.png"
+            "photo": "../Images/photoOfMenu/americano.png"
         },
         "capuchino": {
             "name": "Капучіно",
             "volume_ml": "250мл",
             "energy_value": "125 ккал/ б-6/в-9.9/ж-7.2",
             "price": "55грн",
-            "photo": "../Picture/photoOfMenu/capuchino.png"
+            "photo": "../Images/photoOfMenu/capuchino.png"
         },
         "catlate": {
             "name": "Котолате",
             "volume_ml": "250мл",
             "energy_value": "139 ккал/ б-7/в-21/ж-3",
             "price": "50грн",
-            "photo": "../Picture/photoOfMenu/catlate.png"
+            "photo": "../Images/photoOfMenu/catlate.png"
         },
         "catspresso": {
             "name": "Кетспрессо",
             "volume_ml": "30мл",
             "energy_value": "2.25 ккал/ б-0.06/в-0/ж-0.12",
             "price": "35грн",
-            "photo": "../Picture/photoOfMenu/catspresso.png"
+            "photo": "../Images/photoOfMenu/catspresso.png"
         },
         "dopio": {
             "name": "Допіо",
             "volume_ml": "60мл",
             "energy_value": "4.5 ккал/ б-0.12/в-0/ж-0.24",
             "price": "45грн",
-            "photo": "../Picture/photoOfMenu/dopio.png"
+            "photo": "../Images/photoOfMenu/dopio.png"
         },
         "flatwhite": {
             "name": "Флет-уайт",
             "volume_ml": "180мл",
             "energy_value": "62.6 ккал/ б-2.7/в-4.2/ж-3.1",
             "price": "65грн",
-            "photo": "../Picture/photoOfMenu/flatwhite.png"
+            "photo": "../Images/photoOfMenu/flatwhite.png"
         },
         "lungo": {
             "name": "Лунго",
             "volume_ml": "60мл",
             "energy_value": "4.5 ккал/ б-0.12/в-0/ж-0.24",
             "price": "45грн",
-            "photo": "../Picture/photoOfMenu/lungo.png"
+            "photo": "../Images/photoOfMenu/lungo.png"
         },
         "mokkachino": {
             "name": "Моккачіно",
             "volume_ml": "250мл",
             "energy_value": "454 ккал/ б-7.6/в-41/ж-25.8",
             "price": "60грн",
-            "photo": "../Picture/photoOfMenu/mokkachino.png"
+            "photo": "../Images/photoOfMenu/mokkachino.png"
         },
         "raf": {
             "name": "Раф",
             "volume_ml": "250мл",
             "energy_value": "208 ккал/ б-5.5/в-28.5/ж-7.7",
             "price": "60грн",
-            "photo": "../Picture/photoOfMenu/raf.png"
+            "photo": "../Images/photoOfMenu/raf.png"
         }
     },
     "Tea_and_Chocolate":{
@@ -70,21 +70,21 @@
             "volume_ml": "350мл",
             "energy_value": "108 ккал/ б-4.5/в-28.5/ж-7.7",
             "price": "38грн",
-            "photo": "../Picture/photoOfMenu/black_tea.jpeg"
+            "photo": "../Images/photoOfMenu/black_tea.jpeg"
         },
         "green_tea": {
             "name": "Зелений чай",
             "volume_ml": "350мл",
             "energy_value": "108 ккал/ б-5.5/в-19.5/ж-7.7",
             "price": "38грн",
-            "photo": "../Picture/photoOfMenu/grean_tea.jpg"
+            "photo": "../Images/photoOfMenu/grean_tea.jpg"
         },
         "hot_chocolate": {
             "name": "Гарячий шоколад",
             "volume_ml": "270мл",
             "energy_value": "208 ккал/ б-5.2/в-34.5/ж-5",
             "price": "63грн",
-            "photo": "../Picture/photoOfMenu/hot_chocolate.jpg"
+            "photo": "../Images/photoOfMenu/hot_chocolate.jpg"
         }
     },
     "Cocktails":{
@@ -93,7 +93,7 @@
             "volume_ml": "300мл",
             "energy_value": "208 ккал/ б-5.5/в-28.5/ж-7.7",
             "price": "63грн",
-            "photo": "../Picture/photoOfMenu/mojito.jpg"
+            "photo": "../Images/photoOfMenu/mojito.jpg"
         }
     },
     "Juice_and_Water":{
@@ -102,14 +102,14 @@
             "volume_ml": "450мл",
             "energy_value": "240 ккал/ б-5.5/в-28.5/ж-7.7",
             "price": "42грн",
-            "photo": "../Picture/photoOfMenu/fruitJuice.jpg"
+            "photo": "../Images/photoOfMenu/fruitJuice.jpg"
         },
         "bottled_water": {
             "name": "Водиця",
             "volume_ml": "750мл",
             "energy_value": "110 ккал/ б-5.5/в-28.5/ж-7.7",
             "price": "30грн",
-            "photo": "../Picture/photoOfMenu/bottleOfWater.jpg"
+            "photo": "../Images/photoOfMenu/bottleOfWater.jpg"
         }
     },
     "Special_drinks":{
@@ -118,21 +118,21 @@
             "volume_ml": "2*2м",
             "energy_value": "тепленька",
             "price": "за закриту сесію",
-            "photo": "../Picture/photoOfMenu/pledyk.jpg"
+            "photo": "../Images/photoOfMenu/pledyk.jpg"
         },
         "pilow": {
             "name": "Подушка",
             "volume_ml": "пухова",
             "energy_value": "мякенка",
             "price": "за закриту сесію",
-            "photo": "../Picture/photoOfMenu/pilow.jpg"
+            "photo": "../Images/photoOfMenu/pilow.jpg"
         },
         "12hForSleep": {
             "name": "Сон",
             "volume_ml": "12 годин",
             "energy_value": "в тиші",
             "price": "за закриту сесію",
-            "photo": "../Picture/photoOfMenu/sleep12h.jpg"
+            "photo": "../Images/photoOfMenu/sleep12h.jpg"
         }
     }
 

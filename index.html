@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="ukr">
 <head>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="/script/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catmosphere Cafe</title>
-    
+    <link rel="icon" type="image/x-icon" href="Images/header/small_header_icon.png">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/script.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Marck+Script&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Marck+Script&display=swap" rel="stylesheet">
+</head>    
 <body>
-    <header>
+    <!-- Шапка для desktop -->
+    <header id="desktop-header">
         <!-- Посилання на соцмережі та кнопки зміни мови -->
         <div class="top-header-content line-spbw-div">
             <h4 class="third-block-title">Email: catmospherecafe23@gmail.com | Адреса: Київська обл; м.Київ; вул.Нагірна 18/16; на території ЖК "Хенесі Хаус"</h4>
             <div class="line-spar-div">
                 <a href="" id="ukrLangBtn">Ua</a>
                 <a href="" id="engLangBtn">En</a>
-                <a href="" id="telegramLogoBtn"><img src="Picture/header/telegram_logo.png" alt="telegram logo"></a>
-                <a href="" id="instagramLogoBtn"><img src="Picture/header/instagram_logo.png" alt="instagram logo"></a>
-                <a href="" id="facebookLogoBtn"><img src="Picture/header/facebook logo.png" alt="facebook logo"></a>
+                <a href="" id="telegramLogoBtn"><img src="Images/header/telegram_logo.png" alt="telegram logo"></a>
+                <a href="" id="instagramLogoBtn"><img src="Images/header/instagram_logo.png" alt="instagram logo"></a>
+                <a href="" id="facebookLogoBtn"><img src="Images/header/facebook logo.png" alt="facebook logo"></a>
             </div>
         </div>
         <div class="decorate-brown-line-heaader"></div>
@@ -32,34 +33,80 @@
         <div class="line-spbw-div">
             <!-- Логотип з назвою -->
             <div class="header-logo line-center-div">
-                <a href="index.html" class="main-logo-btn"><img src="Picture/header/small_header_icon.png" alt="small header logo"></a>
+                <a href="index.html" class="main-logo-btn"><img src="Images/header/small_header_icon.png" alt="small header logo"></a>
                 <a href="index.html" class="main-logo-btn"><h2 class="second-block-title">CatmosphereCafe</h2></a>
             </div>
             <!-- Телефони, авторизація, коти, кошик -->
             <div class="right-header-content">
                 <div class="line-spbw-div">
-                    <img src="Picture/header/Phone Ico.png" alt="phone icon">
+                    <img src="Images/header/Phone Ico.png" alt="phone icon">
                     <div>
                         <h4 class="third-block-title">+380(068) ***  - *** - **</h4>
                         <h4 class="third-block-title">+380(050) ***  - *** - **</h4>
                     </div>
                 </div>
                 <div>
-                    <a href="profile.html" id="userBtn"><img src="Picture/header/user_vector.png" alt="user"></a>
-                    <a href="profile.html" id="cartBtn"><img src="Picture/header/cart_vector.png" alt="cart"></a>
+                    <a href="profile.html" id="userBtn"><img src="Images/header/user_vector.png" alt="user"></a>
+                    <a href="profile.html" id="cartBtn"><img src="Images/header/cart_vector.png" alt="cart"></a>
                 </div>
             </div>
         </div>
     </header>
-    <nav>
-        <a href="cafe-menu.html" id="Menu">Меню кафе</a>
-        <a href="cats.html" id="our-cats">Наші котики</a>
+    <!-- Навігація для  desktop-->
+    <nav id="desktop-nav">
+        <a href="cafe-menu.html">Меню кафе</a>
+        <a href="cats.html">Наші котики</a>
         <button id="table-reservation"  onclick="overlayOn('table-reservation-overlay')">Резервація столиків</button>
-        <a href="info-page.html" id="info-and-contacts">Контакти та інфо</a>
+        <a href="info-page.html">Контакти та інфо</a>
     </nav>
+
+
+    <!-- Шапка для phone -->
+    <header id="phone-header" class="line-spbw-div">
+        <!-- Лого та ім'я кафе -->
+        <div class="header-logo line-center-div">
+            <a href="index.html" class="main-logo-btn"><img src="Images/header/small_header_icon.png" alt="small header logo"></a>
+            <a href="index.html" class="main-logo-btn"><h2 class="third-block-title">Catmosphere Cafe</h2></a>
+        </div>
+        <!-- Медіа та Контактні дані -->
+        <div class="media-contacts line-col-div">
+            <!-- Посилання на соцмережі -->
+            <div class="line-spbw-div">
+                <a href="" id="telegramLogoBtn"><img src="Images/header/telegram_logo.png" alt="telegram logo"></a>
+                <a href="" id="instagramLogoBtn"><img src="Images/header/instagram_logo.png" alt="instagram logo"></a>
+                <a href="" id="facebookLogoBtn"><img src="Images/header/facebook logo.png" alt="facebook logo"></a>
+            </div>
+            <!-- Номери телефонів -->
+            <div class="line-col-div">
+                <h4 class="third-block-title">+380(068) ***  - *** - **</h4>
+                <h4 class="third-block-title">+380(050) ***  - *** - **</h4>
+            </div>
+        </div>
+    </header>
+    <!-- Навігація для phone -->
+    <nav id="phone-nav" class="line-spbw-div">
+        <!-- Випадаюче меню -->
+        <button id="phone-nav-burger" onclick="overlayOn('burger-buttons')"><div class="burger-line"></div><div class="burger-line"></div><div class="burger-line"></div></button>
+        <div class="overlay" id="burger-buttons" onclick="overlayOff('burger-buttons')">
+            <div class="burger-buttons">
+                <div></div>
+                <a href="cafe-menu.html">Меню кафе</a>
+                <a href="cats.html">Наші котики</a>
+                <button id="table-reservation"  onclick="overlayOn('table-reservation-overlay')">Резервація столиків</button>
+                <a href="info-page.html">Контакти та інфо</a>
+            </div>
+        </div>
+        <!-- Профіль та кошик -->
+        <div class="line-spbw-div" id="phone-prof-cart-btn">
+            <a href="profile.html" id="userBtn"><img src="Images/header/user_vector.png" alt="user"></a>
+            <a href="profile.html" id="cartBtn"><img src="Images/header/cart_vector.png" alt="cart"></a>
+        </div>
+    </nav>
+
+
     <!-- Прев'ю кафе -->
     <div class="welcome-block line-col-div">
-        <img src="Picture/mainLogo.png" alt="main logo Catmocphere Cafe">
+        <img src="Images/mainLogo.png" alt="main logo Catmocphere Cafe">
         <h2 class="block-title">Catmosphere Cafe</h2>
     </div>
     <!-- ПДекоративні лінії -->
@@ -68,44 +115,72 @@
         <div class="decorate-lightbrown-line"></div>
         <div class="decorate-brown-line"></div>
     </div>
+    
     <!-- В нас ви зможете -->
-    <div class="your-opportunities-with-us line-col-div block-content">
+    <!-- desktop -->
+    <div class="your-opportunities-with-us  block-content" id="desktop-yopwu">
         <!-- Заголовок -->
         <div class="top-content">
             <h2 class="block-title">В нас ви зможете</h2>
         </div>
         <!-- Основний контент блоку -->
-        <div class="line-spbw-div">  
+        <div class="line-spbw-div" id="desktop-yopwu">  
             <!-- Блоки назва-зображення -->
             <div class="content-text-circle line-col-div">
                 <h3 class="second-block-title">Випити кави</h3>
-                <div><img src="Picture/IcoCoffe 1.png" alt="Coffe cap"></div>
+                <div><img src="Images/IcoCoffe 1.png" alt="Coffe cap"></div>
             </div>
             <div class="content-text-circle line-col-div">
                 <h3 class="second-block-title">З'їсти смаколик</h3>
-                <div><img src="Picture/IcoEat 1.png" alt="Cake"></div>
+                <div><img src="Images/IcoEat 1.png" alt="Cake"></div>
             </div>
             <div class="content-text-circle line-col-div">
                 <h3 class="second-block-title">Прихистити кота</h3>
-                <div><img src="Picture/IcoCat 1.png" alt="Cat in box"></div>
+                <div><img src="Images/IcoCat 1.png" alt="Cat in box"></div>
             </div>
             <div class="content-text-circle line-col-div">
                 <h3 class="second-block-title">Бути щасливим</h3>
-                <div><img src="Picture/IcoMan 1.png" alt="Happy human"></div>
+                <div><img src="Images/IcoMan 1.png" alt="Happy human"></div>
             </div>
         </div>
     </div>
+    <!-- phone -->
+    <div class="line-col-div" id="phone-yopwu">
+        <!-- Заголовок -->
+        <div class="top-content">
+            <h2 class="block-title">В нас ви зможете</h2>
+        </div>
+        <!-- Основний контент блоку -->
+        <div  class="section line-spbw-div" id="section1">
+            <h3 class="third-block-title">Випити кави</h3>
+            <div><img src="Images/IcoCoffe 1.png" alt="Coffe cap"></div>
+        </div>
+        <div  class="section line-spbw-div" id="section2">
+            <h3 class="third-block-title">З'їсти смаколик</h3>
+            <div><img src="Images/IcoEat 1.png" alt="Cake"></div>
+        </div>
+        <div  class="section line-spbw-div" id="section3">
+            <h3 class="third-block-title">Прихистити кота</h3>
+            <div><img src="Images/IcoCat 1.png" alt="Cat in box"></div>
+        </div>
+        <div  class="section line-spbw-div" id="section4">
+            <h3 class="third-block-title">Бути щасливим</h3>
+            <div><img src="Images/IcoMan 1.png" alt="Happy human"></div>
+        </div>
+    </div>
+
     <!-- ЛДекоративні лінії -->
     <div class="left-decorate-line">        
         <div class="decorate-blue-line"></div>
         <div class="decorate-lightbrown-line"></div>
         <div class="decorate-brown-line"></div>
     </div>
+
     <!-- Опис нашого кафе -->
     <div class="description-cafe frame-content">
         <div>
             <!-- Фото із абсолютною позицією -->
-            <img src="Picture/cat_svg_1.svg" alt="cat">
+            <img src="Images/cat_svg_1.svg" alt="cat">
             <!-- Короткий опис кафе -->
             <p class="cursive-text">
                 "Наша кав'ярня затишно розташована в центрі міста, - це унікальний простір для любителів кави та котів. 
@@ -116,44 +191,63 @@
             </p>
         </div>
     </div>
+
     <!-- ПДекоративні лінії -->
     <div class="right-decorate-line">        
         <div class="decorate-blue-line"></div>
         <div class="decorate-lightbrown-line"></div>
         <div class="decorate-brown-line"></div>
     </div>
+
     <!-- Панель меню кафе -->
     <div class="our-menu-presentation line-col-div block-content">
         <h2 class="block-title">Наше меню</h2>
         <h4 class="third-block-title">У нашому кафе ви зможете відвідати багато різноманітних й смачних напоїв, страв та десертів. Кожен знайде собі щось за смаком.</h4>
-        <div class="menu-panel line-col-div">
+        <div class="menu-panel line-col-div" id="desktop-menu-pr">
             <div class="names-on-panel line-spar-div">
                 <h4 class="second-block-title">Страви</h4>
                 <h4 class="second-block-title">Напої</h4>
                 <h4 class="second-block-title">Десерти</h4>
             </div>
             <div class="line-spbw-div">
-                <img src="Picture/menu-photo-dish.png" alt="corndog">
-                <img src="Picture/menu-photo-drink.png" alt="coffe">
-                <img src="Picture/menu-photo-desert.png" alt="desert">
+                <img src="Images/menu-photo-dish.png" alt="corndog">
+                <img src="Images/menu-photo-drink.png" alt="coffe">
+                <img src="Images/menu-photo-desert.png" alt="desert">
             </div>
             <a class="gbutton" href="cafe-menu.html">Відкрити меню</a>
         </div>
+        <div class="presentation-menu-slider line-col-div" id="phone-menu-pr">
+            <div class="menu-cetegory">
+                <img src="Images/menu-photo-dish.png" alt="corndog">
+                <a class="gbutton" href="cafe-menu.html">Страви</a>
+            </div>
+            <div class="menu-cetegory">
+                <img src="Images/menu-photo-drink.png" alt="coffe">
+                <a class="gbutton" href="cafe-menu.html">Напої</a>
+            </div>
+            <div class="menu-cetegory">
+                <img src="Images/menu-photo-desert.png" alt="desert">
+                <a class="gbutton" href="cafe-menu.html">Десерти</a>
+            </div>
+        </div>
     </div>
+
     <!-- ЛДекоративні лінії -->
     <div class="left-decorate-line">        
         <div class="decorate-blue-line"></div>
         <div class="decorate-lightbrown-line"></div>
         <div class="decorate-brown-line"></div>
     </div>
+
     <!-- Розповідь про ціль, мету, атмосферу кафе -->
     <div class="talking-about-us line-col-div block-content">
         <h2 class="block-title">Трохи про нас</h2>
         <div>
-            <table>
+            <!-- Desktop -->
+            <table id="tkau-desktop">
                 <tr>
                     <th>
-                        <img src="Picture/cat-cafe-galery1.png" alt="coffe cap">
+                        <img src="Images/cat-cafe-galery1.png" alt="coffe cap">
                     </th>
                     <th colspan="2">
                         <span class="cursive-text">Вітаємо вас, любі клієнти. Раді бачити вас на нашому сайті! І раз ви тут - ми хочемо росповісти вам трохи цікавого про нас ^_^</span>
@@ -164,12 +258,12 @@
                         <span class="cursive-text">Наше Catmosphere Cafe - це маленький закуток комфорту та затишку, де ви можете гарно відпочіти, смочно поїсти та поєднати дві найпрекрасніщі у світи речі - розпиття кави та ніжності с пухнастими котиками!</span>
                     </th>
                     <th>
-                        <img src="Picture/cat-cafe-galery2.png" alt="lazy cat on the table">
+                        <img src="Images/cat-cafe-galery2.png" alt="lazy cat on the table">
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <img src="Picture/cat-cafe-galery3.png" alt="more cats on the table">
+                        <img src="Images/cat-cafe-galery3.png" alt="more cats on the table">
                     </th>
                     <th colspan="2">
                         <span class="cursive-text">Як й було сказано вище, прийшовши до нас, ви будете ділити спільний простір не лише з людьми, але й з маленькими пухнастими друзями,
@@ -184,9 +278,9 @@
                             за потреби, лікування. З рештою, він стає частиною нашого закладу, де має комфортні умови, спілкування із іншими сородичами, гарне харчування, постійну людську увагу й лубов та нарешті отримує шанс на те, щоб стати частиною чиєїсь родини або супутником такої ж самотньої, як і він був колись, людини.</span>
                     </th>
                     <th id="photo-cat-galery-tau">
-                        <img id="cat-cafe-galery4" src="Picture/cat-cafe-galery4.png" alt="cat">
-                        <img id="cat-cafe-galery5" src="Picture/cat-cafe-galery5.png" alt="cat logo">
-                        <img id="cat-cafe-galery6" src="Picture/cat-cafe-galery6.png" alt="cat and coffe">
+                        <img id="cat-cafe-galery4" src="Images/cat-cafe-galery4.png" alt="cat">
+                        <img id="cat-cafe-galery5" src="Images/cat-cafe-galery5.png" alt="cat logo">
+                        <img id="cat-cafe-galery6" src="Images/cat-cafe-galery6.png" alt="cat and coffe">
                     </th>
                 </tr>
                 <tr>
@@ -197,7 +291,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <img src="Picture/cat-cafe-galery7.png" alt="cat and eat"></th>
+                        <img src="Images/cat-cafe-galery7.png" alt="cat and eat"></th>
                     <th colspan="2">
                         <span class="cursive-text">Окрім усього вищесказаного, звісно, наше кафе вам підійде, якщо просто хочете гарно провести час та перекусити. 
                             В нашому приоритеті - ваше задоволення, тому ми чітко слідкуємо за якістю страв та обслуговування. </span>
@@ -209,53 +303,67 @@
                     </th>
                 </tr>
             </table>
+            <!-- Phone -->
+            <div class="line-col-div" id="tkau-phone">
+                <p class="cursive-text">Вітаємо вас, любі клієнти. Раді бачити вас на нашому сайті! І раз ви тут - ми хочемо росповісти вам трохи цікавого про нас ^_^</p>
+                <p class="cursive-text" style="text-align: right;">Наше Catmosphere Cafe - це маленький закуток комфорту та затишку, де ви можете гарно відпочіти, смочно поїсти та поєднати дві найпрекрасніщі у світи речі - розпиття кави та ніжності с пухнастими котиками!</p>
+                <p class="cursive-text">Як й було сказано вище, прийшовши до нас, ви будете ділити спільний простір не лише з людьми, але й з маленькими пухнастими друзями,
+                    спостерігаючи доки вони роблять свої важливі котячі справи. З ними можна гарно провести час, але це не єдина причина чому вони тут: 
+                    Наша основна ціль - допомогти безпритульним котикам знайти собі повний любові будинок! </p>
+                <p class="cursive-text" style="text-align: right;">Для цього ми розробили власну программу за для прихистку тварин! Наше кафе приймяє до себе різних нужденних у допомозі котиків з притулків,
+                    від волонтерів, з вулиці та також з рук небайдужих. Після прибуття нового пухнастика до нас, він проходить ретельну медичну переверку та,
+                    за потреби, лікування. З рештою, він стає частиною нашого закладу, де має комфортні умови, спілкування із іншими сородичами, гарне харчування, постійну людську увагу й лубов та нарешті отримує шанс на те, щоб стати частиною чиєїсь родини або супутником такої ж самотньої, як і він був колись, людини.</p>
+                <p class="cursive-text">До реалізації знаходження для котиків нового господоря ми теж підійшли відповідально: При бажанні відвідувача забрати до себе пухнастика,
+                    наш співробітник допоможе ближче познайомитись з обраним муркотиком, надасть консультацію про догляд за пухнастиком, оформить документи на тваринку та вет-паспорт.</p>
+                <p class="cursive-text" style="text-align: right;">Окрім усього вищесказаного, звісно, наше кафе вам підійде, якщо просто хочете гарно провести час та перекусити. 
+                    В нашому приоритеті - ваше задоволення, тому ми чітко слідкуємо за якістю страв та обслуговування. </p>
+                <p class="cursive-text">Бажаємо вам приємного відпочінку в нас та, сподіваємося, що коти не зроблять вам кусь.</p>
+            </div>
         </div>
     </div>
+
     <!-- ПДекоративні лінії -->
     <div class="right-decorate-line">        
         <div class="decorate-blue-line"></div>
         <div class="decorate-lightbrown-line"></div>
         <div class="decorate-brown-line"></div>
     </div>
-    <!-- Активний каталог котів -->
+
+    <!-- Анкети котів -->
     <div class="our-cats-catalog block-content">
-        <div>
+        <div class="line-col-div">
             <h2 class="block-title">Наші котики</h2>
             <h3 class="third-block-title">
                 Ці милі пухастики ще більш скрасять ваш час у нашому закладі, але вони роботи для вас це постійно! Усі вони шукають собі домівку та люблячого друга.
                 Ви маєте змогу подивитись анкети котиків на нашему сайті, обрати собі улюбленця та зарезервувати його собі, щоб до того як ви прийдете до закладу вашого мальнького друга не забрав інший господар.
             </h3>
             <div id="cats-card-slider" class="line-center-div">
-                <button id="left-slide-btn"><div class="triangle-btn-slider"></div></button>
-                <div class="card-of-cat line-center-div">
-                    <table>
-                        <tr>
-                            <th rowspan="3"><div class="img-bg-brown"><img id="cat-photo" src="" alt="Cat photo"></div></th>
-                            <th><h2 class="block-title" id="cat-name"></h2></th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p class="standart-text" id="cat-sex">Стать: </p>
-                                <p class="standart-text" id="cat-age">Вік: </p>
-                                <p class="standart-text" id="cat-character">Характер: </p>
-                                <p class="standart-text" id="cat-description">Опис: </p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="line-col-div"><button class="bbutton cat-card-button"><a href="cats.html">Перейти до анкети</a></button></th>
-                        </tr>
-                    </table>
+                <button class="second-block-title" id="prev">&#10094</button>
+                <div class="card-of-cat line-center-div" id="card-of-cat">
+                    <div class="slide line-center-div">
+                        <div class="img-bg-brown"><img id="cat-photo" src="" alt="Cat photo"></div>
+                        <div>
+                            <h2 class="block-title" id="cat-name"></h2>
+                            <p class="standart-text" id="cat-sex">Стать: </p>
+                            <p class="standart-text" id="cat-age">Вік: </p>
+                            <p class="standart-text" id="cat-character">Характер: </p>
+                            <p class="standart-text" id="cat-description">Опис: </p>
+                        </div>
+                    </div>
                 </div>
-                <button id="right-slide-btn"><div class="triangle-btn-slider"></div></button>
+                <button class="second-block-title" id="next">&#10095</button>
             </div>
+            <a class="gbutton" href="cats.html">Перейти до анкет</a>
         </div>
     </div>
+
     <!-- ЛДекоративні лінії -->
     <div class="left-decorate-line">        
         <div class="decorate-blue-line"></div>
         <div class="decorate-lightbrown-line"></div>
         <div class="decorate-brown-line"></div>
     </div>
+
     <!-- Оверлей Резервація столику -->
     <div class="overlay line-center-div" id="table-reservation-overlay">
         <div class="close-btn" onclick="overlayOff('table-reservation-overlay')"></div>
@@ -290,6 +398,7 @@
             </table>
         </form>
     </div>
+
     <!-- Оверлей підтвердження резервування -->
     <div class="overlay" id="succesfully-reserved" style="display: none;">
         <div class="close-btn" onclick="overlayOff('table-reservation-overlay')"></div>
@@ -299,7 +408,8 @@
             <button class="bbutton" onclick="overlayOff('succesfully-reserved')">Добренько</button>
         </div>
     </div>
-    <footer class="line-spbw-div">
+
+    <footer class="line-center-div">
         <h3 class="second-block-title">Catmosphere Cafe</h3>
         <h3 class="third-block-title" style="text-align: left;">З питань cпівпраці : <br><br>
             Телефон: +38(068) *** - ** - ** <br>

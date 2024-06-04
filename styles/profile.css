@@ -1,8 +1,231 @@
-/* Переключення блоків у профілі */
-.profile-tabs-block{
-    width: 80%;
-    margin: 20px auto;
+/* За замовчуванням блок з бонусами і історією замовлень приховані */
+.client-bonuses,
+.last-orders
+{
+    display: none;
 }
+
+@media (max-width: 600px){
+    /* Переключення блоків у профілі */
+    .profile-tabs-block{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .profile-btn{
+        margin: 0 10px 0 0;
+        font-size: 1em;
+    }
+
+    /* Інфо про користувача */
+    .profile-info{
+        flex-direction: column;
+    }   
+    /* Текст особистих даних */
+    .profile-info h4{
+        font-size: 1.2em;
+    }
+    /* Персональні дані */
+    .main-info{
+        width: 100%;
+    }
+    .main-info .second-block-title{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .personal-info{
+        flex-direction: column;
+    }
+    /* Текст особистих даних */
+    .profile-info h4,
+    .profile-info i{
+        text-align: left;
+        margin: 5px 40px;
+    }
+    .profile-info div{
+        width: 100%;
+    }
+
+    /* Додаткова інформація */
+    /* Заголовок блоку */
+    .extra-info-header .block-title{
+        font-size: 32px;
+    }
+    .extra-info-header img{
+        width: 112px;
+        margin-top: auto;
+    }
+    .extra-info form{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+        height: 60px;
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    /* Додатковий блок */
+    /* Додаткова інформація і резервація столику */
+    .extra-info .text-description{
+        flex-direction: column;
+    }
+    .extra-info .book-plate{
+        width: 95%;
+        height: 400px;
+    }
+    .extra-info .left-side{
+        width: 30px;
+        height: 100%;
+    }
+    .book-plate table {
+        width: 100%;
+        margin: auto 0;   
+    }
+    .book-plate table th {
+        margin: 0;
+    }
+
+    /* Бонуси */
+    .client-bonuses div{
+        flex-direction: column-reverse;
+    }
+    
+    /* Історія замовлень */
+    /* Заголовок з котом */
+    .last-orders-title .block-title{
+        font-size: 32px;
+        text-align: left;
+    }
+    .last-orders-title img{
+        width: 160px;
+        margin: 70px 0 0 calc(200px);
+        transform: rotate(60deg);
+    }
+    /* Блок з замовленнями */
+    .orders-history{
+        width: 100%;
+        padding: 3px;
+        padding-bottom: 50px;
+    }
+
+    /* Табличка замовлення */
+    .orders-history .book-plate{
+        width: 96%;
+        height: 110px;
+        margin: 20px 2%;
+    }
+    .orders-history .left-side,
+    .orders-history .right-side{
+        padding: 3px;
+    }
+    /* Ліва частина таблички */
+    .orders-history .book-plate .left-side{
+        width: 25%;
+    }
+    .orders-history .left-side *{
+        font-size: 12px;
+    }
+    .number-and-copy-and-status {
+        flex-direction: column;
+    }
+    /* Права сторона таблички */
+    .orders-history .book-plate .right-side{
+        width: 70%;
+    }
+    .orders-history .right-side .order-time{
+        font-size: 11px;
+    }
+    .orders-history .right-side .second-block-title{
+        font-size: 20px
+    }
+    .details-order-desktop{
+        display: none;
+    }
+    .orders-history .right-side p,
+    .orders-history .right-side b,
+    .orders-history .right-side button {
+        font-size: 14px;
+    }
+    .orders-history .right-side .bp-bottom-content{
+        width: 100%;
+    }
+}
+@media (min-width: 1024px){
+    /* Переключення блоків у профілі */
+    .profile-tabs-block{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .profile-btn{
+        margin: 0 10px;
+        font-size: 1.5em;
+    }
+    .profile-btn.profile-btn.active-p:hover{
+        margin: 0 10px;
+    }
+    /* Текст особистих даних */
+    .profile-info h2,
+    .profile-info h4,
+    .profile-info i{
+        text-align: left;
+        margin: 5px 40px;
+    }
+    .profile-info h4{
+        font-size: 1.75em;
+    }
+
+    /* Додатковий блок */
+    /* Додаткова інформація і резервація столику */
+    .extra-info .book-plate{
+        width: 580px;
+        height: 410px;
+    }
+    .book-plate form {
+        padding: 20px;
+    }
+    input{
+        width: 380px;
+        height: 50px;
+    }
+    .book-plate table {
+        width: 380px;
+        margin: auto 0;   
+    }
+    .book-plate table input {
+        width: 187px;
+    }
+    input[name="fName"],
+    input[name="phoneNum"],
+    .form-block button{
+        font-size: 1.5em;
+    }
+
+    .last-orders-title img{
+        margin: 0 10% 46px calc(90% - 338px);
+    }
+    .orders-history{
+        padding: 20px;
+        padding-bottom: 200px;
+    }
+
+    .last-orders .left-side,
+    .last-orders .right-side {
+        height: 200px;
+    }
+
+    .bp-bottom-content b,
+    .bp-bottom-content button{
+        width: 225px;
+    }
+
+    .orders-history .right-side b,
+    .orders-history .right-side p,
+    .orders-history.right-side button{
+        font-size: 1.25em;
+        margin: 0;
+    }
+}
+
 /* Кнопки для переключення блоків */
 .profile-btn{
     background-color: #EFDFBB;
@@ -10,16 +233,15 @@
     height: 55px;
     border: none;
     border-bottom: solid 5px #483C32;
-    margin: 0 10px;
     padding: 0;
-    font-size: 24px;
     line-height: 55px;
-    transition: all 700ms ease;
+    transition: all 600ms ease;
 }
 /* Стан для кнопки активного блоку */
 .profile-btn.active-p{
     background-color: #8CBED6;
 }
+
 /* Анмація кнопок переключення */
 .profile-btn:hover{
     margin: 0;
@@ -28,7 +250,6 @@
     cursor: pointer;
 }
 .profile-btn.active-p:hover{
-    margin: 0 10px;
     padding: 0;
     border-bottom: solid 5px #8CBED6;
 }
@@ -36,72 +257,47 @@
 /* Особиста інформація */
 /* задній фон для фото користувача */
 .profile-photo{
-    background-image: url("/Picture/bg-for-profile-photo.png");
-    background-size: cover;
-    background-position: center;
+    background-color: #483C32;
+    border-radius: 2%;
+    padding: 2%;
 }
 /* Фото користувача */
-.profile-photo img{
-    width: 432px;
-    height: 470px;
-    margin: 15px;
+.profile-photo img{ 
+    width: 96%;
+    height: 96%;
+    max-width: 432px;
+    max-height: 470px;
     border: solid 4px #8CBED6;
-    border-radius: 2%;
+    border-radius: 6%;
+    padding: 2%;
 }
 /* Стилізація панелі із особистими даними */
 .profile-info h2,
 .profile-info h4,
 .profile-info i{
-    text-align: left;
     color:#007066;
-    margin: 5px 40px;
 }
-.profile-info h4{
-    font-size: 1.75em;
-}
-
 
 /* Додатковий блок */
 /* Додаткова інформація і резервація столику */
-.extra-info .book-plate{
-    width: 580px;
-    height: 410px;
-}
 .extra-info .form-block{
     margin: auto;
-}
-.book-plate form {
-    padding: 20px;
 }
 .extra-info input{
     background-color: #EFDFBB;
 }
 /* Стилізація форми для замовлення столику в профілі користувача */
 input {
-    width: 380px;
-    height: 50px;
-    border: 1px solid #000;
+    border: 1px solid #483C32;
     border-radius: 5px;
     margin: 5px 0;
     padding: 0;
     color: #483C32;
     text-align: center;
 }
-input[name="fName"],
-input[name="phoneNum"],
-.form-block button{
-    font-size: 1.5em;
-}
-.book-plate table {
-    width: 380px;
-    margin: auto 0;   
-}
 .extra-info-header,
 .book-plate table th {
     padding: 0;
-}
-.book-plate table input {
-    width: 187px;
 }
 .extra-info-header img{
     margin-left: auto;
@@ -109,6 +305,8 @@ input[name="phoneNum"],
 .extra-info-header .text-description{
     margin: 0 auto;
 }
+
+
 
 /* Бонуси */
 .num-of-bonuses{
@@ -122,20 +320,19 @@ input[name="phoneNum"],
     font-weight: 700;
 }
 
+
 /* Історія замовлень */
+.last-orders{
+    width: 100%;
+}
+.last-orders-title{
+    min-height: 110px;
+}
 .last-orders-title img{
     position: absolute;
-    margin: 0 10% 46px calc(90% - 338px);
 }
 .orders-history{
-    padding: 20px;
-    padding-bottom: 200px;
     margin-bottom: 0;
-}
-.last-orders .left-side,
-.last-orders .right-side{
-    height: 200px;
-    padding: 10px;
 }
 /* Номер, кнопка копіювання */
 .orders-history .left-side{
@@ -156,7 +353,6 @@ input[name="phoneNum"],
 }
 .orders-history .left-side .second-block-title{
     color: #EFDFBB;
-    font-size: 2em;
 }
 /* Загальні дані про замовлення */
 .orders-history .right-side{
@@ -175,9 +371,6 @@ input[name="phoneNum"],
 .feadback-overlay textarea{
     color: #483C32;
 }
-.orders-history .right-side b,
-.orders-history .right-side p,
-.orders-history.right-side button,
 .feadback-overlay textarea{
     font-size: 1.25em;
     margin: 0;
@@ -186,10 +379,6 @@ input[name="phoneNum"],
 .orders-history .right-side span,
 .orders-history .right-side button{
     color: #007066;
-}
-.bp-bottom-content b,
-.bp-bottom-content button{
-    width: 225px;
 }
 .bp-bottom-content button{
     background-color: #8CBED6;
@@ -205,21 +394,12 @@ input[name="phoneNum"],
     border-color: #FFC700;
 }
 .more-orders button{
-    background-color: inherit;
-    border: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-top: solid 120px #483C32;
-    width: 120px;
-    height: 120px;
-    margin: auto;
-}
-
-/* За замовчуванням блок з бонусами і історією замовлень приховані */
-.client-bonuses,
-.last-orders
-{
-    display: none;
+    background-color: #483C32;
+    border-radius: 50%;
+    width: 100;
+    height: 100px;
+    margin: 0;
+    rotate: 180deg;
 }
 
 
@@ -283,3 +463,4 @@ input[name="phoneNum"],
 .product-panel .name-photo-product{
     width: 300px;
 }
+

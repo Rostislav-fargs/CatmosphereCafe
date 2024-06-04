@@ -2,28 +2,30 @@
 <html lang="ukr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наші коти CatmosphereCafe</title>
+    <link rel="icon" type="image/x-icon" href="Images/header/small_header_icon.png">
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cats.css">
-    <script src="/script/script.js"></script>
-    <title>Меню кафе CatmosphereCafe</title>
+    <script src="/scripts/script.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Marck+Script&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Marck+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Шапка для desktop -->
+    <header id="desktop-header">
         <!-- Посилання на соцмережі та кнопки зміни мови -->
         <div class="top-header-content line-spbw-div">
             <h4 class="third-block-title">Email: catmospherecafe23@gmail.com | Адреса: Київська обл; м.Київ; вул.Нагірна 18/16; на території ЖК "Хенесі Хаус"</h4>
             <div class="line-spar-div">
                 <a href="" id="ukrLangBtn">Ua</a>
                 <a href="" id="engLangBtn">En</a>
-                <a href="" id="telegramLogoBtn"><img src="Picture/header/telegram_logo.png" alt="telegram logo"></a>
-                <a href="" id="instagramLogoBtn"><img src="Picture/header/instagram_logo.png" alt="instagram logo"></a>
-                <a href="" id="facebookLogoBtn"><img src="Picture/header/facebook logo.png" alt="facebook logo"></a>
+                <a href="" id="telegramLogoBtn"><img src="Images/header/telegram_logo.png" alt="telegram logo"></a>
+                <a href="" id="instagramLogoBtn"><img src="Images/header/instagram_logo.png" alt="instagram logo"></a>
+                <a href="" id="facebookLogoBtn"><img src="Images/header/facebook logo.png" alt="facebook logo"></a>
             </div>
         </div>
         <div class="decorate-brown-line-heaader"></div>
@@ -31,33 +33,79 @@
         <div class="line-spbw-div">
             <!-- Логотип з назвою -->
             <div class="header-logo line-center-div">
-                <a href="index.html" class="main-logo-btn"><img src="Picture/header/small_header_icon.png" alt="small header logo"></a>
+                <a href="index.html" class="main-logo-btn"><img src="Images/header/small_header_icon.png" alt="small header logo"></a>
                 <a href="index.html" class="main-logo-btn"><h2 class="second-block-title">CatmosphereCafe</h2></a>
             </div>
             <!-- Телефони, авторизація, коти, кошик -->
             <div class="right-header-content">
                 <div class="line-spbw-div">
-                    <img src="Picture/header/Phone Ico.png" alt="phone icon">
+                    <img src="Images/header/Phone Ico.png" alt="phone icon">
                     <div>
                         <h4 class="third-block-title">+380(068) ***  - *** - **</h4>
                         <h4 class="third-block-title">+380(050) ***  - *** - **</h4>
                     </div>
                 </div>
                 <div>
-                    <a href="profile.html" id="userBtn"><img src="Picture/header/user_vector.png" alt="user"></a>
-                    <a href="profile.html" id="cartBtn"><img src="Picture/header/cart_vector.png" alt="cart"></a>
+                    <a href="profile.html" id="userBtn"><img src="Images/header/user_vector.png" alt="user"></a>
+                    <a href="profile.html" id="cartBtn"><img src="Images/header/cart_vector.png" alt="cart"></a>
                 </div>
             </div>
         </div>
     </header>
-    <nav>
-        <a href="cafe-menu.html" id="Menu">Меню кафе</a>
-        <a href="cats.html" id="our-cats">Наші котики</a>
+    <!-- Навігація для  decktop-->
+    <nav id="desktop-nav">
+        <a href="cafe-menu.html">Меню кафе</a>
+        <a href="cats.html">Наші котики</a>
         <button id="table-reservation"  onclick="overlayOn('table-reservation-overlay')">Резервація столиків</button>
-        <a href="info-page.html" id="info-and-contacts">Контакти та інфо</a>
+        <a href="info-page.html">Контакти та інфо</a>
     </nav>
+
+
+    <!-- Шапка для phone -->
+    <header id="phone-header" class="line-spbw-div">
+        <!-- Лого та ім'я кафе -->
+        <div class="header-logo line-center-div">
+            <a href="index.html" class="main-logo-btn"><img src="Images/header/small_header_icon.png" alt="small header logo"></a>
+            <a href="index.html" class="main-logo-btn"><h2 class="third-block-title">Catmosphere Cafe</h2></a>
+        </div>
+        <!-- Медіа та Контактні дані -->
+        <div class="media-contacts line-col-div">
+            <!-- Посилання на соцмережі -->
+            <div class="line-spbw-div">
+                <a href="" id="telegramLogoBtn"><img src="Images/header/telegram_logo.png" alt="telegram logo"></a>
+                <a href="" id="instagramLogoBtn"><img src="Images/header/instagram_logo.png" alt="instagram logo"></a>
+                <a href="" id="facebookLogoBtn"><img src="Images/header/facebook logo.png" alt="facebook logo"></a>
+            </div>
+            <!-- Номери телефонів -->
+            <div class="line-col-div">
+                <h4 class="third-block-title">+380(068) ***  - *** - **</h4>
+                <h4 class="third-block-title">+380(050) ***  - *** - **</h4>
+            </div>
+        </div>
+    </header>
+    <!-- Навігація для phone -->
+    <nav id="phone-nav" class="line-spbw-div">
+        <!-- Випадаюче меню -->
+        <button id="phone-nav-burger" onclick="overlayOn('burger-buttons')"><div class="burger-line"></div><div class="burger-line"></div><div class="burger-line"></div></button>
+        <div class="overlay" id="burger-buttons" onclick="overlayOff('burger-buttons')">
+            <div class="burger-buttons">
+                <div></div>
+                <a href="cafe-menu.html">Меню кафе</a>
+                <a href="cats.html">Наші котики</a>
+                <button id="table-reservation"  onclick="overlayOn('table-reservation-overlay')">Резервація столиків</button>
+                <a href="info-page.html">Контакти та інфо</a>
+            </div>
+        </div>
+        <!-- Профіль та кошик -->
+        <div class="line-spbw-div" id="phone-prof-cart-btn">
+            <a href="profile.html" id="userBtn"><img src="Images/header/user_vector.png" alt="user"></a>
+            <a href="profile.html" id="cartBtn"><img src="Images/header/cart_vector.png" alt="cart"></a>
+        </div>
+    </nav>
+
+    <!-- Декоратинвий котик -->
     <div>
-        <img src="Picture/cat_svg15.svg" alt="cat" style="position: absolute;">
+        <img src="Images/cat_svg15.svg" alt="cat" style="position: absolute;">
     </div>
     <!-- ЛДекоративні лінії -->
     <div class="left-decorate-line" style="margin-top: 110px;">        
@@ -65,36 +113,32 @@
         <div class="decorate-lightbrown-line"></div>
         <div class="decorate-brown-line"></div>
     </div>
+
     <!-- Активний каталог котів -->
-    <div class="block-content" id="cat-slider">
-        <div>
+    <div class="our-cats-catalog block-content" id="cat-slider">
+        <div class="line-col-div">
             <h2 class="block-title">Наші котики</h2>
             <div id="cats-card-slider" class="line-center-div">
-                <button id="left-slide-btn"><div class="triangle-btn-slider"></div></button>
-                <div class="card-of-cat line-col-div">
-                    <table>
-                        <tr>
-                            <th rowspan="3"><div class="img-bg-brown"><img id="cat-photo" src="" alt="Cat photo"></div></th>
-                            <th><h2 class="block-title" id="cat-name">Ім'я</h2></th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p class="standart-text" id="cat-sex">Стать: </p>
-                                <p class="standart-text" id="cat-age">Вік: </p>
-                                <p class="standart-text" id="cat-character">Характер: </p>
-                                <p class="standart-text" id="cat-description">Опис: </p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="line-col-div"><button class="bbutton cat-card-button" onclick="overlayOn('questionnaire-cat-shelter-overlay')">Прихистити</button></th>
-                        </tr>
-                    </table>
+                <button class="second-block-title" id="prev">&#10094</button>
+                <div class="card-of-cat line-col-div" id="card-of-cat">
+                    <div class="slide line-center-div">
+                        <div class="img-bg-brown"><img id="cat-photo" src="" alt="Cat photo"></div>
+                        <div>
+                            <h2 class="block-title" id="cat-name"></h2>
+                            <p class="standart-text" id="cat-sex">Стать: </p>
+                            <p class="standart-text" id="cat-age">Вік: </p>
+                            <p class="standart-text" id="cat-character">Характер: </p>
+                            <p class="standart-text" id="cat-description">Опис: </p>
+                        </div>
+                    </div>
                     <p class="standart-text" id="cat-story"></p>
                 </div>
-                <button id="right-slide-btn"><div class="triangle-btn-slider"></div></button>
+                <button class="second-block-title" id="next">&#10095</button>
             </div>
+            <button class="gbutton" id="shelter-cat" onclick="overlayOn('questionnaire-cat-shelter-overlay')">Прихистити</button>
         </div>
     </div>
+
     <!-- ПДекоративні лінії -->
     <div class="right-decorate-line">        
         <div class="decorate-blue-line"></div>
@@ -109,35 +153,8 @@
         </div>
         <!-- Кнопки для переходу на анкети котів -->
         <div class="frame-content">
-            <div class="galery">
-                <button class="cat" data-cat="layla">
-                    <img src="Picture/ourCats/layla.png" alt="Лайла">
-                    <p class="cursive-text">Лайла</p>
-                </button>
-                <button class="cat" data-cat="sher">
-                    <img src="picture/ourcats/sher.png" alt="Шер">
-                    <p class="cursive-text">Шер</p>
-                </button>
-                <button class="cat" data-cat="timon">
-                    <img src="picture/ourcats/timon.png" alt="Тімон">
-                    <p class="cursive-text">Рюріх</p>
-                </button>
-                <button class="cat" data-cat="ryurih">
-                    <img src="picture/ourcats/ryurih.png" alt="Рюріх">
-                    <p class="cursive-text">Тімон</p>
-                </button>
-                <button class="cat" data-cat="marusya">
-                    <img src="picture/ourcats/marusya.png" alt="Маруся">
-                    <p class="cursive-text">Маруся</p>
-                </button>
-                <button class="cat" data-cat="sever">
-                    <img src="picture/ourcats/sever.png" alt="Север">
-                    <p class="cursive-text">Север</p>
-                </button>
-                <button class="cat" data-cat="kusya">
-                    <img src="picture/ourcats/kusya.png" alt="Куся">
-                    <p class="cursive-text">Куся</p>
-                </button>
+            <div class="galery" id="galery">
+                <!-- Коти з json файлу -->
             </div>
         </div>
     </div>
@@ -212,7 +229,7 @@
     </div>
 
     
-    <footer class="line-spbw-div">
+    <footer class="line-center-div">
         <h3 class="second-block-title">Catmosphere Cafe</h3>
         <h3 class="third-block-title" style="text-align: left;">З питань cпівпраці : <br><br>
             Телефон: +38(068) *** - ** - ** <br>

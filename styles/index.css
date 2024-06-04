@@ -1,31 +1,224 @@
 /* Вітальний блок */
 .welcome-block{
     justify-content: center;
-    height: calc(100vh - 200px);
-    background-image: url("../Picture/bgCafeimg.png");
-    background-size: cover;
-    background-position: center; 
+    background-image: url("../Images/bgCafeimg.png");
+    background-size: cover; 
+    background-position: center;
     padding: 1vh 0;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 .welcome-block .block-title{
     color: #EFDFBB;
-    font-size: 96px;
 }
 
-/* В нас ви зможете */
-.content-text-circle div{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #8CBED6;
-    margin: 20px 110px;
+
+
+@media (min-width: 1024px){
+    /* Вітальний блок */
+    .welcome-block{
+        height: calc(100vh - 200px);
+    }
+    .welcome-block .block-title{
+        font-size: 96px;
+    }
+
+    /* В нас ви зможете */
+    #phone-yopwu{
+        display: none;
+    }
+    .content-text-circle div{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #8CBED6;
+        margin: 20px 50px;
+    }
+    .content-text-circle img{
+        margin: 15px;
+        width: 120px;
+        height: 110px;
+    }
+
+    /* Опис кафе */
+    .description-cafe .cursive-text{
+        width: 850px;
+    }
+    .description-cafe img{
+        position: absolute;
+        padding-top: 40px;
+    }
+
+    /* Посилання на меню */
+    #phone-menu-pr{
+        display: none;
+    }
+    .our-menu-presentation .third-block-title{
+        width: 750px;
+        margin: 20px 0;
+    }
+
+    /* Трохи про нас */
+    #tkau-phone{
+        display: none;
+    }
+
+    /* Картка кота */
+    #cats-card-slider{
+        justify-content: center;
+    }
+    .card-of-cat{
+        height: 499px;
+        max-width: calc(100% - 60px);
+        width: 80%;
+        background-color: #8CBED6;
+        border-radius: 53px;
+        border: 6px solid #483C32;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        margin: 0 10px;
+    }
+    .slide{
+        justify-content: space-between;
+    }
+    /* фото кота */
+    .card-of-cat img{
+        height: 475px;
+        width: 357px;
+        border-radius: 47px;
+        border: 12px dashed #EFDFBB;
+    }
+    /* підкладинка під фото */
+    .img-bg-brown{
+        width: 381px;
+        height: 499px;
+        border-radius: 47px;
+        background-color: #483C32;
+    }
 }
-.content-text-circle img{
-    margin: 15px;
-    width: 120px;
-    height: 110px;
+@media (max-width: 600px){
+    /* Вітальний блок */
+    .welcome-block{
+        height: calc(100vh - 120px);
+    }
+
+    /* В нас ви зможете */
+    #desktop-yopwu{
+        display: none;
+    }
+    #phone-yopwu,
+    #phone-yopwu .block-title{
+        margin-bottom: 60px;
+    } 
+    .section {
+        width: 94%;
+        padding: 20px 5px;
+        margin: 2px;
+        color: #333;
+        font-size: 1.5em;
+        font-weight: bold;
+        transform: skewY(10deg);
+        border: dashed 4px #483C32;
+    }
+    #section1,
+    #section3 {
+        background-color: #8CBED6;
+    }
+    #section2,
+    #section4 {
+        background-color: #18B6AC;
+    }
+    .section img {
+        width: 100px;
+        height: 100px;
+    }
+    .section .third-block-title {
+        margin: 0;
+    }
+    .section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .section img,
+    .section .third-block-title{
+        transform: skewY(-10deg);
+    }
+
+    /* Опис кафе */
+    .description-cafe .cursive-text{
+        width: 90%;
+    }
+    .description-cafe img{
+        position: absolute;
+        width: 180px;
+        bottom: -140px;
+        left: -50px;
+    }
+
+    /* Посилання на меню */
+    #desktop-menu-pr{
+        display: none;
+    }
+    .menu-cetegory{
+        background-color: #483C32;
+        width: 80%;
+        margin: 10px;
+        border-radius: 20px;
+        border: solid 8px #483C32;
+        /* box-shadow: 15px 15px 10px #483C3290; */
+    }
+    .menu-cetegory img{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .menu-cetegory a{
+        margin: 20px;
+    }
+    .our-menu-presentation .third-block-title{
+        width: 80%;
+        margin: 20px 0;
+    }
+
+
+    /* Трохи про нас */
+    #tkau-desktop{
+        display: none;
+    }
+    #tkau-phone p{
+        width: 90%;
+    }
+
+
+    /* Картка кота */
+    .card-of-cat{
+        width: 66vw;
+        background-color: #8CBED6;
+        border-radius: 53px;
+        border: 6px solid #483C32;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        margin: 0 3px;
+    }
+    .slide{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+    }
+    .slide div{
+        height: 300px;
+    }
+    #cat-name{
+        width: 70%;
+        background-color: #8CBED6;
+        border-radius: 53px;
+        margin: 0 auto;
+    }
+    /* фото кота */
+    .card-of-cat img{
+        width: 66vw;
+        height: 36.83vh;
+        border-top-left-radius: 47px;
+        border-top-right-radius: 47px;
+    }
 }
+
 
 /* Опис кафе */
 /* Перекриття котом тексту */
@@ -40,24 +233,16 @@
 }
 /* Короткий опис кафе */
 .description-cafe .cursive-text{
-    width: 850px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23483C32FF' stroke-width='4' stroke-dasharray='24%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     padding: 20px; /* Відступ всередині рамки */
     margin: 0px auto;
     text-align: center;
 }
-.description-cafe img{
-    position: absolute;
-    padding-top: 40px;
-}
+
 
 /* Панель переходу до меню */
 .our-menu-presentation .menu-panel{
     width: 968px;
-}
-.our-menu-presentation .third-block-title{
-    width: 750px;
-    margin: 20px 0;
 }
 .menu-panel .line-spar-div{
     width: 90%;
@@ -83,34 +268,16 @@
     margin: 10px;
 }
 
-
-/* Картка кота */
-.card-of-cat{
-    height: 600px;
-    width: 960px;
-    background-color: #8CBED6;
-    border-radius: 53px;
-    border: 6px solid #483C32;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    margin: 0 10px;
+/* Анкети котів */
+.our-cats-catalog a{
+    margin-top: 20px;
 }
-/* фото кота */
-.card-of-cat img{
-    height: calc(499px - 24px);
-    width: calc(381px - 24px);
-    border-radius: 53px;
-    border: 12px dashed #EFDFBB;
-}
-/* підкладинка під фото */
-.img-bg-brown{
-    width: 381px;
-    height: 499px;
-    border-radius: 53px;
+.our-cats-catalog button{
     background-color: #483C32;
-}
-/* таблиця з інформацією */
-.card-of-cat table{
-    text-align:left;
-    width: 95%;
-    margin: auto;
+    color: #8CBED6;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
 }

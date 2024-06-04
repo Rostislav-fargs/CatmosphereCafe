@@ -1,39 +1,110 @@
-/* Картка кота */
-.card-of-cat{
-    background-color: #8CBED6;
-    height: 480px;
-    border-radius: 10px;
-    border: 6px solid #483C32;
-    box-shadow: 5px 5px 15px #00000080;
-    margin: 0 10px;
-    padding: 10px;
+@media (min-width: 1024px){
+    /* Картка кота */
+    .card-of-cat{
+        background-color: #8CBED6;
+        width: calc(100% - 60px);
+        height: 480px;
+        border-radius: 10px;
+        border: 6px solid #483C32;
+        box-shadow: 5px 5px 15px #00000080;
+        margin: 0 10px;
+        padding: 10px;
+    }
+    .card-of-cat img{
+        width: 300px;
+        height: 325px;
+        border-radius: 53px;
+        border: 4px dashed #EFDFBB;
+    }
+    .img-bg-brown{
+        width: 308px;
+        height: 333px;  
+        border-radius: 53px;
+        background-color: #483C32;
+    }
+    .card-of-cat .standart-text{
+        font-weight: 600;
+    }
+    .card-of-cat .right-side button{
+        background-color: #8CBED6;
+        border-bottom: solid 4px #483C32;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    .cat{
+        width: 200px;
+    }
+
+    /* Галерея з котами */
+    .galery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
 }
-.card-of-cat img{
-    width: 300px;
-    height: 325px;
-    border-radius: 53px;
-    border: 4px dashed #EFDFBB;
+
+@media (max-width: 600px){
+    /* Картка кота */
+    .card-of-cat{
+        width: 66vw;
+        background-color: #8CBED6;
+        border-radius: 53px;
+        border: 6px solid #483C32;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        margin: 0 3px;
+    }
+    .slide,
+    #cat-story{
+        width: 95%;
+    }
+    .slide{
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
+    #cat-name{
+        width: 70%;
+        background-color: #8CBED6;
+        border-radius: 53px;
+        margin: 0 auto;
+    }
+    /* фото кота */
+    .card-of-cat img{
+        width: 66vw;
+        height: 36.83vh;
+        border-top-left-radius: 47px;
+        border-top-right-radius: 47px;
+    }
+    #cat-story{
+        margin-bottom: 25px;
+    }
+
+    /* Галерея з котами */
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .cat{
+        width: 140px;
+    }
 }
-.img-bg-brown{
-    width: 308px;
-    height: 333px;  
-    border-radius: 53px;
+
+/* Анкети котів */
+.our-cats-catalog a{
+    margin-top: 20px;
+}
+.our-cats-catalog button:not(#shelter-cat){
     background-color: #483C32;
+    color: #8CBED6;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
 }
-.card-of-cat .standart-text{
-    font-weight: 600;
-}
-.card-of-cat table{
-    text-align:left;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-.card-of-cat .right-side button{
-    background-color: #8CBED6;
-    border-bottom: solid 4px #483C32;
-    padding-left: 0;
-    padding-right: 10px;
+#shelter-cat{
+    margin-top: 20px;
 }
 
 /* Інші коти */
@@ -43,11 +114,10 @@
     align-items: center;
     padding: 20px;
 }
+
 /* Галерея з котами */
 .galery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
 }
 /* Картка кота в галереї */
 .cat {
@@ -55,12 +125,12 @@
     border-radius: 10px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    width: 200px;
     padding: 10px;
     text-align: center;
-    transition: all 400ms ease ;
+    transition: all 200ms ease ;
 }
 .cat:hover{
+    position: relative;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
     border: dashed 4px #8CBED6;
 }
@@ -70,6 +140,8 @@
 }
 
 .cat img {
+    position: relative;
+    top: 0;
     display: block;
     width: 100%;
     height: auto;

@@ -1,7 +1,27 @@
 /* тіло сторінки */
 body{
+    position: relative;
     background-color: #EFDFBB;
     margin: 0;
+    min-height: 100vh;
+}
+@media (max-width: 600px) {
+    body::after{
+        height: 193.6px;
+    }
+}
+@media (min-width: 1024px) {
+    body::after{
+        height: 122px;
+    }
+}
+body::after{
+    content: '';
+    display: block;
+}
+header,
+nav{
+    display: none;
 }
 
 
@@ -22,20 +42,29 @@ body{
 .third-block-title{
     text-align: center;
 }
-.block-title{
-    font-size: 4em;
-}
-.second-block-title{
-    font-size: 2.25em;
-}
 .third-block-title{
     font-size: 1.25e
 }
 .cursive-text{
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 .standart-text{
     font-size: 1em;
+}
+@media (max-width: 600px){
+    .block-title{
+        font-size: 2.5em;
+    }
+    .second-block-title{
+        font-size: 1.75em;
+    }
+}@media (min-width: 1024px){
+    .block-title{
+        font-size: 4em;
+    }
+    .second-block-title{
+        font-size: 2.25em;
+    }
 }
 
 
@@ -68,6 +97,7 @@ input,
 }
 header .second-block-title,
 .right-header-content .third-block-title,
+#phone-header *,
 .welcome-block .block-title,
 footer .second-block-title,
 .menu-welcom-title .block-title{
@@ -87,7 +117,6 @@ footer .second-block-title,
 .line-spar-div,
 .line-spbw-div,
 .right-header-content,
-nav,
 .line-col-div,
 .book-plate,
 .overlay{
@@ -108,22 +137,33 @@ nav{
 
 
 /* Заготівки до блоків, кноппок, тощо... */
-.block-content{
-    border-radius: 33px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+@media (max-width: 600px){
+    .block-content,
+    .text-description{
+        width: 94%;
+        padding: 3%;
+        margin: 0;
+    }
 }
-.block-content,
-.text-description{
-    width: 80%;
-    padding: 30px;
-    margin: 0 auto;
+@media (min-width: 1024px){
+    .block-content{
+        border-radius: 33px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    .block-content,
+    .text-description{
+        width: 80%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+    .frame-content,
+    .block-content{
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
 }
+
 .frame-content{
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23483C32FF' stroke-width='10' stroke-dasharray='24%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-}
-.frame-content,
-.block-content{
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 /* Кнопки для форм і оверлеїв */
 button{
@@ -143,7 +183,7 @@ button{
 .gbutton{
     background-color: #007066;  
     color: #EFDFBB;
-    box-shadow: 15px 15px 15px #483C3240;
+    box-shadow: 10px 10px 10px #332F28;
 }
 .bbutton{
     background-color: #EFDFBB;
@@ -174,6 +214,7 @@ th .bbutton a:hover{
 
 /* Стилізаця для шапки та надписів у ній */
 /* frame стилізація кольору і відступів для всіх сторінок */
+
 header,
 header .second-block-title,
 header .third-block-title,
@@ -226,7 +267,8 @@ a{
 .right-header-content{
     width: 400px;
 }
-.right-header-content a{
+.right-header-content a,
+#phone-prof-cart-btn a{
     display: inline-block;
     background: #8CBED6;
     height: 50px;
@@ -239,6 +281,7 @@ a{
 .right-header-content a:active{
     background-color: #007066;
 }
+
 /* Навігаційна панель */
 .right-header-content a img,
 nav{
@@ -249,7 +292,6 @@ nav{
     position: sticky;
     top: 0;
     background-color: #483C32;
-    border-top: solid 4px #8CBED6;
     border-bottom: solid 4px #8CBED6;
     z-index: 999;
 }
@@ -258,7 +300,7 @@ nav button{
     display: block;
     text-align: center;
     line-height: 43px;
-    width: 330px;
+    width: 20%;
     border: 0px;
     color: #EFDFBB;
     background: #483C32;
@@ -369,8 +411,23 @@ nav button:active{
 
 /* Підвал */
 footer{
+    position: absolute;
+    bottom: 0;
     background-color: #483C32;
     padding: 20px 0;
+}
+@media (max-width: 600px) {
+    footer{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1024px) {
+    footer{
+        justify-content: space-between;
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
 }
 
 
@@ -498,7 +555,7 @@ footer{
 }
 .left-decorate-line,
 .right-decorate-line{
-    margin: 100px 0px 100px 0px;
+    margin: 100px 0px;
 }
 .decorate-blue-line,
 .decorate-lightbrown-line,
@@ -521,4 +578,98 @@ footer{
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     margin: 20px auto 20px 0;
+}
+
+@media (max-width: 600px){
+    #phone-header,
+    #phone-nav,
+    #phone-burger-menu,
+    .burger-buttons{
+        display: flex;
+    }
+    #phone-burger-menu,
+    .burger-buttons{
+        flex-direction: column;
+    }
+
+    /* Шапка */
+    .header-logo{
+        width: 60vw;
+    }
+    .header-logo img{
+        width: 70px;
+    }
+    .media-contacts{
+        width: 31vw;
+        font-size: 0.75em;
+    }
+
+    /* Навігаційна панель */
+    nav .third-block-title{
+        font-size: 12px;
+    }
+    .burger-buttons{
+        z-index: 1000;
+        width: 300px;
+        border-bottom-right-radius: 20px;
+    }
+    .burger-buttons div{
+        background-color: #8CBED6;
+        height: 53px;
+        width: 100vw;
+    }
+    nav button{
+        border: none;
+    }
+    .burger-buttons a, .burger-buttons button{
+        width: 70vw;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        border: solid 4px #8CBED6;
+        box-sizing: border-box; /* Включає межі в ширину і висоту */
+    }
+    .burger-buttons, .burger-buttons a:last-child{
+        border-bottom-right-radius: 20px;
+    }
+    .left-decorate-line,
+    .right-decorate-line{
+        margin: 30px 0px;
+    }
+    #phone-prof-cart-btn a,
+    #phone-nav-burger{
+        border-right: 0px;
+    }
+    #phone-prof-cart-btn a{
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        margin: 0px 10px;
+    }
+}
+@media (min-width: 1024px){
+    #desktop-header{
+        display: block;
+    }
+    #desktop-nav{
+        display: flex;
+    }
+    #phone-header,
+    #phone-nav{
+        display: none;
+    }
+}
+
+.burger-line{
+    background-color: #8CBED6;
+    width: 36px;
+    height: 6px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+/* Меню оверлей для телефону */
+nav .overlay{
+    justify-content: start;
+    align-items:start;
 }

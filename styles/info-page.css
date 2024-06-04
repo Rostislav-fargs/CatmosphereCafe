@@ -1,13 +1,58 @@
+@media (max-width: 600px){
+    /* Хто ми такі */
+    .who-are-we,
+    .location-and-contacts .frame-content{
+        flex-direction: column;
+    }
+    .who-are-we img{
+        width: 300px;
+    }
+
+    /* Адреса і кнотакти */
+    .location-and-contacts .book-plate .block-title{
+        font-size: 24px;
+    }
+    .location-and-contacts .book-plate .standart-text{
+        font-size: 16px;
+    }
+    .location-and-contacts .book-plate{
+        width: 95%;
+    }
+    .location-and-contacts .left-side{
+        width: 30px;
+    }
+    .location-and-contacts .frame-content{
+        height: 100vh;
+    }
+
+    /* Контакти для прямого працевлаштування */
+    .contacts-work .block-title{
+        font-size: 2em;
+    }
+    .contacts-block{
+        width: calc(90% - 48px);
+    }
+}
+
+@media (min-width: 1024px){
+    /* Адреса і кнотакти */
+    .location-and-contacts .book-plate{
+        width: 500px;
+    }
+    .location-and-contacts .frame-content{
+        height: calc(100vh - 172px);
+    }
+    .name-vacancy:hover{
+        font-size: 1.2em;
+        transition: font-size 200ms;
+    }
+
+    .contacts-block{
+        width: 620px;
+    }
+}
+
 /* Адреса і кнотакти */
-.location-and-contacts .book-plate{
-    width: 500px;
-}
-.location-and-contacts .frame-content{
-    height: calc(100vh - 172px);
-}
-.location-and-contacts iframe{
-    height: calc(100vh - 500px);
-}
 .iframe-container {
     flex: 1 1 auto;
     width: 100%;
@@ -18,7 +63,6 @@
     height: calc(100% - 20px);
     padding: 10px;
 }
-
 
 /* Блок з вакансіями */
 .list-of-vacancies{
@@ -33,38 +77,37 @@
 .list-of-vacancies .third-block-title{
     text-align: left;
 }
+
 /* Загаловкова табличка вакансій */
 .name-vacancy .second-block-title{
     color: #8CBED6;
-    transition: font-size 600ms;
-}
-.name-vacancy:hover{
-    font-size: 1.2em;
     transition: font-size 200ms;
 }
-/* Загаловкова табличка вакансій */
 
+/* Загаловкова табличка вакансій */
 .name-vacancy{
     background-color: #483C32;
-    width: 95%;
+    width: calc(95% - 60px);
     border-radius: 20px;
     border: dashed #8CBED6 4px;
     padding: 0 30px;
-}
-/* Загаловкова табличка вакансій */
-
-.name-vacancy img{
-    transition: 400ms;
 }
 .name-vacancy img,
 .vacancy .block-title{
     margin: 7px 30px;
 }
+.name-vacancy img{
+    width: 50px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: 0px;
+    transition: 400ms;
+}
 /* Бликитиний блок, інформація вакансії */
 .content-vacancy{
     display: none;
     background-color: #8CBED6;
-    width: 93%;
+    width: calc(95% - 60px - 20px);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 20px;
@@ -82,7 +125,6 @@
 /* Контакти для прямого працевлаштування */
 .contacts-block{
     background-color: #9F8170;
-    width: 620px;
     height: 370px;
     border: solid #483C32 4px;
     border-radius: 53px;

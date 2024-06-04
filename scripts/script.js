@@ -1,69 +1,53 @@
 // Закриття і відкриття оверлеїв
 function overlayOn(overlay){
     document.getElementById(overlay).style.display = 'flex';
-}
+};
 function overlayOff(overlay){
     document.getElementById(overlay).style.display = 'none';
-}
+};
 function overlaySwap(first, second){
     document.getElementById(first).style.display = 'none';
     document.getElementById(second).style.display = 'flex';
-}
-
-// Зміна контенту на сторінці профілю
-if(window.location.pathname === "profile.html"){
-    function showBlock(block, button){
-        // Приховуємо всі блоки
-        document.getElementById('profile-acc').style.display = 'none';
-        document.getElementById('client-bonuses').style.display = 'none';
-        document.getElementById('last-orders').style.display = 'none';
-        // Відркиваємо блок, кнопка якого була натиснута
-        document.getElementById(block).style.display = 'block';
-        // Знімаємо з кнопок активний стан
-        let buttons = document.querySelectorAll('.profile-btn');
-        buttons.forEach(function(btn) {
-            btn.classList.remove('active-p');
-        });
-        // Надаємо натиснутій кнопці активний стан
-        button.classList.add('active-p');
-    }
-}
+};
 
 // Drop list вакансії
-document.addEventListener('DOMContentLoaded', function () {
-    // Отримуємо список всіх елементів вакансій
-    const vacancies = document.querySelectorAll('.vacancy');
+if(window.location.pathname === "/info-page.html"){
+    document.addEventListener('DOMContentLoaded', function () {
 
-    // Перебираємо кожну вакансію
-    vacancies.forEach(function (vacancy) {
-        // Отримуємо назву вакансії
-        let vacancyTitle = vacancy.querySelector('.name-vacancy');
-
-        // Отримуємо контент вакансії
-        let vacancyContent = vacancy.querySelector('.content-vacancy');
-
-        // Додаємо обробник подій кліку на назву вакансії
-        vacancyTitle.addEventListener('click', function () {
-            // Змінюємо відображення контенту вакансії
-            if (vacancyContent.style.display === 'block') {
-                vacancyContent.style.display = 'none';
-                
-                // Перевертання трикутника у заголовку вакансії
-                vacancyTitle.querySelector('img').style.transform = "rotate(0deg)"
-            } else {
-
-                // Показуємо контент поточної вакансії
-                vacancyContent.style.display = 'block';
-
-                // Перевертання трикутника у заголовку вакансії
-                vacancyTitle.querySelector('img').style.transform = "rotate(180deg)"
-            }
+        // Отримуємо список всіх елементів вакансій
+        const vacancies = document.querySelectorAll('.vacancy');
+    
+        // Перебираємо кожну вакансію
+        vacancies.forEach(function (vacancy) {
+            // Отримуємо назву вакансії
+            let vacancyTitle = vacancy.querySelector('.name-vacancy');
+    
+            // Отримуємо контент вакансії
+            let vacancyContent = vacancy.querySelector('.content-vacancy');
+    
+            // Додаємо обробник подій кліку на назву вакансії
+            vacancyTitle.addEventListener('click', function () {
+                // Змінюємо відображення контенту вакансії
+                if (vacancyContent.style.display === 'block') {
+                    vacancyContent.style.display = 'none';
+                    
+                    // Перевертання трикутника у заголовку вакансії
+                    vacancyTitle.querySelector('img').style.transform = "rotate(0deg)"
+                } else {
+    
+                    // Показуємо контент поточної вакансії
+                    vacancyContent.style.display = 'block';
+    
+                    // Перевертання трикутника у заголовку вакансії
+                    vacancyTitle.querySelector('img').style.transform = "rotate(180deg)"
+                }
+            });
         });
     });
-});
-
+};
 
 //Додавання у меню товарів
+// Зміна стилів на сторінці меню
 if(window.location.pathname === "/cafe-menu.html") {
     document.addEventListener('DOMContentLoaded', () => {
         const menu = document.getElementById('cafe-menu');//Отримуємо блок меню
@@ -71,7 +55,7 @@ if(window.location.pathname === "/cafe-menu.html") {
         let current_ukr_name = 'НАПОЇ'; // За замовчуванням поточною категорією є всі напої
         let sortingDirection = 'none'; // Змінна, що вказує на напрямок сортування, за зростанням (asc) або за спаданням (desc)
         let currentPage = 1; // Поточна сторінка
-        const itemsPerPage = 9; // Кількість позицій на сторінку
+        const itemsPerPage = 8; // Кількість позицій на сторінку
         
         // Функція очищення меню
         function clearMenu() {
@@ -99,26 +83,27 @@ if(window.location.pathname === "/cafe-menu.html") {
             product_card.appendChild(drink_photo);
     
             const product_info = document.createElement('div');
-            product_info.className = 'product-info';
-            product_info.style.display = 'flex';
-            product_info.style.flexDirection = 'column';
-            product_info.style.justifyContent = 'space-between';
+            product_info.className = 'product-info line-spbw-div';
             product_card.appendChild(product_info);
+
+            const product_info1 = document.createElement('div');
+            product_info1.className = 'product-info-content';
+            product_info.appendChild(product_info1);
     
             const name = document.createElement('h4');
             name.textContent = drink.name;
             name.className = 'third-block-title';
-            product_info.appendChild(name);
+            product_info1.appendChild(name);
     
             const volume_ml = document.createElement('p');
             volume_ml.textContent = drink.volume_ml;
             volume_ml.className = 'standart-text';
-            product_info.appendChild(volume_ml);
+            product_info1.appendChild(volume_ml);
     
             const energy_value = document.createElement('p');
             energy_value.textContent = drink.energy_value;
             energy_value.className = 'standart-text';
-            product_info.appendChild(energy_value);
+            product_info1.appendChild(energy_value);
     
             const product_price = document.createElement('div');
             product_price.className = 'product-price line-spbw-div';
@@ -126,6 +111,7 @@ if(window.location.pathname === "/cafe-menu.html") {
     
             const price = document.createElement('span');
             price.textContent = drink.price;
+            price.className = 'standart-text';
             product_price.appendChild(price);
     
             const cart_icon = document.createElement('button');
@@ -133,7 +119,7 @@ if(window.location.pathname === "/cafe-menu.html") {
             product_price.appendChild(cart_icon);
     
             const cart_photo = document.createElement('img');
-            cart_photo.src = '../Picture/cart-brown.svg';
+            cart_photo.src = '../Images/cart-brown.svg';
             cart_photo.alt = 'buy';
             cart_icon.appendChild(cart_photo);
     
@@ -246,13 +232,44 @@ if(window.location.pathname === "/cafe-menu.html") {
     
         
         // Кнопки для виведення категорій напоїв
-        document.getElementById('special_drinks').addEventListener('click', () => showCategory('Special_drinks', 'СПЕЦІАЛЬНІ НАПОЇ'));
-        document.getElementById('juice_and_water_drinks').addEventListener('click', () => showCategory('Juice_and_Water', 'СОКИ/ВОДА'));
-        document.getElementById('cocktails_drinks').addEventListener('click', () => showCategory('Cocktails', 'КОКТЕЙЛІ'));
-        document.getElementById('tea_and_chocolate_drinks').addEventListener('click', () => showCategory('Tea_and_Chocolate', 'ЧАЙ/ШОКОЛАД'));
-        document.getElementById('coffee_drinks').addEventListener('click', () => showCategory('Coffee', 'КАВА'));
+        document.getElementById('special_drinks').addEventListener('click', () => {
+            showCategory('Special_drinks', 'СПЕЦІАЛЬНІ НАПОЇ');
+            if (window.screen.width < 600) {
+                overlayOff('filter-menu');
+            }
+        });
+        document.getElementById('juice_and_water_drinks').addEventListener('click', () => {
+            showCategory('Juice_and_Water', 'СОКИ/ВОДА');
+            if (window.screen.width < 600) {
+                overlayOff('filter-menu');
+            }
+        });
+        document.getElementById('cocktails_drinks').addEventListener('click', () => {
+            showCategory('Cocktails', 'КОКТЕЙЛІ');
+            if (window.screen.width < 600) {
+                overlayOff('filter-menu');
+            }
+        });
+        document.getElementById('tea_and_chocolate_drinks').addEventListener('click', () => {
+            showCategory('Tea_and_Chocolate', 'ЧАЙ/ШОКОЛАД');
+            if (window.screen.width < 600) {
+                overlayOff('filter-menu');
+            }
+        });
+        document.getElementById('coffee_drinks').addEventListener('click', () => {
+            showCategory('Coffee', 'КАВА');
+            if (window.screen.width < 600) {
+                overlayOff('filter-menu');
+            }
+        });
+
         // Кнопка для виведення всіх напоїв
-        document.getElementById('all_drinks').addEventListener('click', () => showCategory('all'));
+        document.getElementById('all_drinks').addEventListener('click', () => {
+            showCategory('all');
+            if (window.screen.width < 600) {
+                overlayOff('filter-menu');
+            }
+        });
     
         // Кнопки для зміни напрямку сортування
         document.getElementById('sort_asc').addEventListener('click', () => {
@@ -265,68 +282,172 @@ if(window.location.pathname === "/cafe-menu.html") {
         });
     
         // Показати всі напої за замовчуванням
+        const filterMenu = document.getElementById('filter-menu');
+        // Додавання обробника події для натискання
+        filterMenu.addEventListener('click', function () {
+
+            // Перевіряємо, чи елемент існує
+            if (filterMenu) {
+
+                // Додавання обробника події для натискання на оверлей
+                if (window.screen.width < 600) {
+                    console.log('aga 600');
+                    // Перевірка, чи натиснуто на сам оверлей, а не на його контент
+                    if (event.target === filterMenu) {
+                        overlayOff('filter-menu');
+                    }
+                }
+            }
+        });
+        // За замовчуванням виводимо всі напої
         showCategory('all');
     });
-}
+};
 
 // Слайдер із анкетами котів
-if(window.location.pathname === "/index.html" || window.location.pathname === "/cats.html"){
+if(window.location.pathname === "/index.html" || window.location.pathname === "/" || window.location.pathname === "/cats.html" ){
     document.addEventListener('DOMContentLoaded', function () {
         // Завантаження JSON-файлу
         fetch('../jsonData/cats.json')
             .then(response => response.json())
             .then(data => {
+                // Перевіряємо, чи дані завантажились коректно
+                if (!data) {
+                    console.error('Помилка завантаження даних');
+                    return;
+                }
+    
                 // Поміщаємо дані з json в cats
                 const cats = data;
-                let currentCatIndex = 0;//Для індексації анкет
+                let currentCatIndex = 0; // Для індексації анкет
                 const catKeys = Object.keys(cats);
+    
+                // Перевірка, чи є ключі у catKeys
+                if (catKeys.length === 0) {
+                    console.error('Ключі для котів не знайдено');
+                    return;
+                }
     
                 // Функція для оновлення картки кота
                 function updateCatCard(cat) {
+                    if (!cat) {
+                        console.error('Неможливо оновити картку кота: дані відсутні');
+                        return;
+                    }
+    
                     document.getElementById('cat-name').innerText = cat.name;
                     document.getElementById('cat-sex').innerText = `Стать: ${cat.sex}`;
                     document.getElementById('cat-age').innerText = `Вік: ${cat.age}`;
                     document.getElementById('cat-character').innerText = `Характер: ${cat.character}`;
-                    document.getElementById('cat-description').innerText = cat.description;
-                    if(window.location.pathname === "/cats.html"){
+    
+                    // Якщо використовуються phone, то необхідно змінити довжину опису на головній сторінці
+                    let catDescription = cat.description;
+                    const maxLength = window.screen.width <= 600 ? 70 : catDescription.length;
+                    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+                        if (catDescription.length > maxLength) {
+                            catDescription = catDescription.substring(0, maxLength) + "...";
+                        }
+                    }
+                    document.getElementById('cat-description').innerText = catDescription;
+                    if (window.location.pathname === "/cats.html") {
                         document.getElementById('cat-story').innerText = cat.story;
-                    };
+                    }
                     document.getElementById('cat-photo').src = cat.photo;
                 }
-                
-
+    
                 // Завантаження першого кота
                 updateCatCard(cats[catKeys[currentCatIndex]]);
-
+    
                 // Іконки-кнопки на сторінці з котами
-                // Дозволяють відкрити обраного кота, якщо він є у json файлі
-                if(window.location.pathname === "/cats.html"){
+                // Дозволяють відкрити обраного кота з каталогу
+                if (window.location.pathname === "/cats.html") {
+                    // Функція для створення елемента кнопки для кожного кота
+                    const container = document.getElementById('galery');
+    
+                    catKeys.forEach((key, index) => {
+                        const ccat = cats[key];
+    
+                        const CatButton = document.createElement('button');
+                        CatButton.classList.add('cat');
+                        CatButton.setAttribute('data-cat', ccat.name.toLowerCase());
+    
+                        const img = document.createElement('img');
+                        img.src = ccat.photo_c;
+                        img.alt = ccat.name;
+    
+                        const p = document.createElement('p');
+                        p.classList.add('cursive-text');
+                        p.textContent = ccat.name;
+    
+                        CatButton.appendChild(img);
+                        CatButton.appendChild(p);
+    
+                        container.appendChild(CatButton);
+                    });
+    
                     // Додаємо обробники подій для кнопок
                     document.querySelectorAll('.cat').forEach(button => {
                         button.addEventListener('click', function () {
                             const catKey = this.getAttribute('data-cat');
-                            updateCatCard(cats[catKey]);
-        
+                            const selectedCat = cats[catKeys.find(key => cats[key].name.toLowerCase() === catKey)];
+    
+                            if (!selectedCat) {
+                                console.error(`Кіт з ключем ${catKey} не знайдено`);
+                                return;
+                            }
+    
+                            updateCatCard(selectedCat);
+    
                             // Плавний перехід до слайдера
+                            let scrollPosition = '';
+                            if (window.screen.width <= 600) {
+                                scrollPosition = 'start';
+                            } else {
+                                scrollPosition = 'center';
+                            }
                             document.getElementById('cat-slider').scrollIntoView({
                                 behavior: 'smooth',
-                                block: "center"
+                                block: scrollPosition
                             });
                         });
                     });
                 }
-
+    
                 // Обробники подій для кнопок
                 // Прогортування ліворуч
-                document.getElementById('left-slide-btn').addEventListener('click', function() {
+                document.getElementById('prev').addEventListener('click', function () {
                     currentCatIndex = (currentCatIndex === 0) ? catKeys.length - 1 : currentCatIndex - 1;
                     updateCatCard(cats[catKeys[currentCatIndex]]);
                 });
                 // Прогортування праворуч 
-                document.getElementById('right-slide-btn').addEventListener('click', function() {
+                document.getElementById('next').addEventListener('click', function () {
                     currentCatIndex = (currentCatIndex === catKeys.length - 1) ? 0 : currentCatIndex + 1;
                     updateCatCard(cats[catKeys[currentCatIndex]]);
                 });
+            })
+            .catch(error => {
+                console.error('Помилка завантаження JSON:', error);
             });
     });
+    
+};
+
+
+// Зміна контенту на сторінці профілю
+if(window.location.pathname === "/profile.html"){
+    function showBlock(block, button){
+        // Приховуємо всі блоки
+        document.getElementById('profile-acc').style.display = 'none';
+        document.getElementById('client-bonuses').style.display = 'none';
+        document.getElementById('last-orders').style.display = 'none';
+        // Відркиваємо блок, кнопка якого була натиснута
+        document.getElementById(block).style.display = 'block';
+        // Знімаємо з кнопок активний стан
+        let buttons = document.querySelectorAll('.profile-btn');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active-p');
+        });
+        // Надаємо натиснутій кнопці активний стан
+        button.classList.add('active-p');
+    }
 };
